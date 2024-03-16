@@ -6,6 +6,7 @@ interface Props {
   href: string
   imageSrc: string
   className?: string
+  align: string
 }
 
 export interface CardItem {
@@ -13,32 +14,65 @@ export interface CardItem {
   link: string
 }
 
-const { href, title, body, items, imageSrc, className } = Astro.props
+const { href, title, body, items, imageSrc, className, align } = Astro.props
 import "@/components/Card/styles.css"
 ---
 
 <li
-  class={`rounded-xl p-6 transition duration-300 ease-out hover:scale-105 border-4 max-w-md hover:border-primary-500 ${className}`}
+  class={`p-6 transition duration-300 ease-out brightness-75 hover:brightness-100 border-4 max-w-md hover:border-primary-500 w-[30rem] pt-10 ${className}`}
 >
   <a href={href} class="max-w-md">
-    <h2 class="text-primary-500 uppercase font-bold text-5xl">
-      {title}
-      <span>&rarr;</span>
-    </h2>
-    <p class="text-black mt-6 text-xl">
+    {
+      align === "left" && (
+        <h2
+          class={`text-primary-500 flex uppercase font-bold text-5xl justify-end items-center h-12`}
+        >
+          <span class="text-white rotate-180 flex items-center pb-3 px-4">
+            &rarr;
+          </span>
+          {title}
+        </h2>
+      )
+    }
+
+    {
+      align === "right" && (
+        <h2
+          class={`text-primary-500 flex uppercase font-bold text-5xl justify-start items-center h-12`}
+        >
+          {title}
+          <span class="text-white flex items-center pb-3 px-4">&rarr;</span>
+        </h2>
+      )
+    }
+
+    <p class="text-black md:mt-12 text-xl">
       <!-- <a href="http://www.google.es" class="bg-pink-400 py-2 leading-8">
         {body}
       </a> -->
       {
         items.map((item, index) => {
           return (
-            <a href={item.link} class="text-black hover:text-primary-500">
-              {`${item.label}, `}
+            <a
+              href={item.link}
+              class={`flex text-white hover:text-primary-500 font-bold uppercase text-3xl ${align === "left" ? " justify-end" : ""}`}
+              transition:name={item.label}
+              transition:animate="fade"
+            >
+              {item.label}
             </a>
           )
         })
       }
     </p>
-    <img class="mt-10 mix-blend-normal rounded-xl" src={imageSrc} alt={title} />
+    <div
+      class={`flex items-center ${align === "left" ? "pl-12 justify-end" : "pr-12 justify-start"}`}
+    >
+      <img
+        class={`my-10 mix-blend-normal flex w-full ${align === "left" ? " justify-end content-end rounded-l-3xl" : "rounded-r-3xl"}`}
+        src={imageSrc}
+        alt={title}
+      />
+    </div>
   </a>
 </li>

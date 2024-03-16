@@ -2,6 +2,7 @@
 interface Props {
   title: string
 }
+
 import { ViewTransitions } from "astro:transitions"
 
 const { title } = Astro.props
@@ -20,17 +21,7 @@ const { title } = Astro.props
     <ViewTransitions />
   </head>
   <body>
-    <main
-      class="h-screen md:w-full bg-secondary-800 bg-dot-white/[0.2] relative pb-24 overflow-hidden"
-    >
-      <div>
-        <div
-          class="flex items-center justify-center bg-secondary-800 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-        >
-        </div>
-        <slot />
-      </div>
-    </main>
+    <slot />
     <style is:global>
       @font-face {
         font-family: "Saans";
@@ -81,25 +72,10 @@ const { title } = Astro.props
           monospace;
       }
 
-      .octagonalShape {
-        clip-path: polygon(
-          14% 0,
-          87% 0,
-          100% 14%,
-          100% 88%,
-          87% 100%,
-          13% 100%,
-          0 90%,
-          0 16%
-        );
-      }
-
-      .leftPoint {
-        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-      }
-
-      .rightPoint {
-        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      h1 {
+        font-size: 90px !important;
+        color: white;
+        margin-top: 5rem;
       }
 
       ::selection {
@@ -113,15 +89,6 @@ const { title } = Astro.props
         color: white;
         fill: white;
         -webkit-text-fill-color: #4695e2;
-      }
-
-      @media (min-width: 768px) {
-        /* Este valor es para el breakpoint 'md' por defecto de Tailwind */
-        .leftPoint,
-        .rightPoint {
-          -webkit-clip-path: none;
-          clip-path: none;
-        }
       }
     </style>
   </body>
