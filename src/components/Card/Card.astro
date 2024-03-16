@@ -2,25 +2,42 @@
 interface Props {
   title: string
   body: string
+  items: CardItem[]
   href: string
   imageSrc: string
   className?: string
 }
 
-const { href, title, body, imageSrc, className } = Astro.props
+export interface CardItem {
+  label: string
+  link: string
+}
+
+const { href, title, body, items, imageSrc, className } = Astro.props
 import "@/components/Card/styles.css"
 ---
 
 <li
-  class={`rounded-xl p-6 hover:scale-105 border-4 hover:border-primary-500 ${className}`}
+  class={`rounded-xl p-6 transition duration-300 ease-out hover:scale-105 border-4 max-w-md hover:border-primary-500 ${className}`}
 >
-  <a href={href}>
-    <h2 class="text-primary-500">
+  <a href={href} class="max-w-md">
+    <h2 class="text-primary-500 uppercase font-bold text-5xl">
       {title}
       <span>&rarr;</span>
     </h2>
-    <p class="text-black mt-6 text-sm">
-      {body}
+    <p class="text-black mt-6 text-xl">
+      <!-- <a href="http://www.google.es" class="bg-pink-400 py-2 leading-8">
+        {body}
+      </a> -->
+      {
+        items.map((item, index) => {
+          return (
+            <a href={item.link} class="text-black hover:text-primary-500">
+              {`${item.label}, `}
+            </a>
+          )
+        })
+      }
     </p>
     <img class="mt-10 mix-blend-normal rounded-xl" src={imageSrc} alt={title} />
   </a>

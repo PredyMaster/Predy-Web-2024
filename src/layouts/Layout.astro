@@ -70,4 +70,17 @@ const { title } = Astro.props
       Courier New,
       monospace;
   }
+
+  ::selection {
+    background-color: #4695e2;
+    color: #ffffff;
+  }
+
+  .noSelection::selection {
+    /* background: none; */
+    background-color: white;
+    color: white;
+    fill: white;
+    -webkit-text-fill-color: #4695e2;
+  }
 </style>
