@@ -1,3 +1,20 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "compilerOptions": {
+    "baseUrl": ".", // Esto establece la base de tus importaciones relativas
+    "paths": {
+      "@/*": ["./src/*"], // Alias para la carpeta src
+      "@components/*": ["./src/components/*"], // Alias para la carpeta components
+      "@styles/*": ["./src/styles/*"] // Alias para la carpeta styles
+    },
+    "module": "ESNext", // Sistema de módulos, ESNext para las características más recientes
+    "target": "ESNext", // Versión objetivo de ECMAScript, ESNext para las características más recientes
+    "moduleResolution": "node", // Estrategia de resolución de módulos
+    "jsx": "preserve", // Preservar JSX, útil si estás trabajando con frameworks que utilizan JSX
+    "strict": true, // Habilitar todas las opciones estrictas de tipo
+    "esModuleInterop": true, // Permite la interoperabilidad de módulos ES con módulos CommonJS
+    "skipLibCheck": true, // Saltar la verificación de tipos en las declaraciones de las bibliotecas
+    "forceConsistentCasingInFileNames": true // Forzar consistencia en el uso de mayúsculas y minúsculas en nombres de archivo
+  },
+  "include": ["src/**/*"], // Incluir todos los archivos dentro de src para el chequeo de TypeScript
+  "exclude": ["node_modules"] // Excluir la carpeta node_modules
 }

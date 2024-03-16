@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string
+  body: string
+  href: string
+  imageSrc: string
+  className?: string
+}
+
+const { href, title, body, imageSrc, className } = Astro.props
+import "@/components/Card/styles.css"
+---
+
+<li
+  class={`rounded-xl p-6 hover:scale-105 border-4 hover:border-primary-500 ${className}`}
+>
+  <a href={href}>
+    <h2 class="text-primary-500">
+      {title}
+      <span>&rarr;</span>
+    </h2>
+    <p class="text-black mt-6 text-sm">
+      {body}
+    </p>
+    <img class="mt-10 mix-blend-normal rounded-xl" src={imageSrc} alt={title} />
+  </a>
+</li>
