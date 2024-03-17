@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 import Card from "@/components/Card/Card.astro"
-import "@/styles/PageSyles.css"
+/* import "@/styles/PageSyles.css" */
 
 const itemArt = [
   {
@@ -23,6 +23,10 @@ const itemArt = [
   {
     label: "Creaciones con IA",
     link: "arte/ia",
+  },
+  {
+    label: "Graffiti",
+    link: "arte/graffiti",
   },
 ]
 
@@ -51,13 +55,16 @@ const itemMusic = [
 ---
 
 <Layout title="La historia de Predy">
-  <div class="h-screen flex justify-center items-center flex-col">
+  <div
+    id="swipe-area"
+    class="my-[6.2rem] flex justify-center items-center flex-col"
+  >
     <h2
-      class="w-max mx-auto px-8 text-5xl mb-16 flex items-center gap-3 h-20 content-center"
+      class="w-max mx-auto px-8 text-5xl mb-16 flex items-center gap-3 h-20 content-center text-white"
     >
       La historia de
       <span
-        class="text-gradient noSelection font-bold tracking-wide text-6xl h-20 mt-5 flex"
+        class="text-gradient noSelection font-bold tracking-wide text-6xl h-20 mt-5 flex text-primary-500"
       >
         Predy</span
       >
@@ -68,22 +75,24 @@ const itemMusic = [
       class="flex flex-col md:flex-row justify-center w-max mx-auto gap-y-16"
     >
       <Card
-        href="Arte"
+        href="arte"
         title="Arte"
         body="showreel / ilustraciones / 3D / motion graphics / IA"
         items={itemArt}
-        imageSrc="/src/images/Arte-cabecera.jpg"
+        imageSrc={`${import.meta.env.PUBLIC_BASE_PATH}images/Arte-cabecera.jpg`}
         className="w-full mx-10 md:w-[26rem] rounded-l-3xl hover:bg-sky-500/[.06]"
         align="left"
+        viewTransition="transitionArte"
       />
       <Card
-        href="Musica"
+        href="musica"
         title="Música"
         body="Videoclips / Canciones / Conciertos / Extras / Recortes de prensa?"
         items={itemMusic}
-        imageSrc="/src/images/Musica-cabecera.jpg"
+        imageSrc={`${import.meta.env.PUBLIC_BASE_PATH}images/Musica-cabecera.jpg`}
         className="w-full mx-10 md:w-[26rem] rounded-r-3xl hover:bg-sky-500/[.06]"
         align="right"
+        viewTransition="transitionMusica"
       />
     </ul>
   </div>

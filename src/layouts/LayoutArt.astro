@@ -2,6 +2,7 @@
 interface Props {
   title: string
 }
+
 import { ViewTransitions } from "astro:transitions"
 
 const { title } = Astro.props
@@ -14,14 +15,32 @@ const { title } = Astro.props
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/newWeb/styles/global.css" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
+    <script type="module" async src="https://cdn.ampproject.org/bento.mjs"
+    ></script>
+    <script nomodule src="https://cdn.ampproject.org/bento.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.ampproject.org/v0/bento-lightbox-gallery-1.0.css"
+    />
+    <script
+      type="module"
+      async
+      src="https://cdn.ampproject.org/v0/bento-lightbox-gallery-1.0.mjs"
+    ></script>
+    <script
+      nomodule
+      async
+      src="https://cdn.ampproject.org/v0/bento-lightbox-gallery-1.0.js"
+    ></script>
   </head>
   <body>
     <main
-      class="h-screen md:w-full bg-secondary-800 bg-dot-white/[0.2] relative pb-24 overflow-hidden"
+      class="h-screen md:w-full bg-secondary-700 bg-dot-white/[0.2] relative pb-24 overflow-hidden"
     >
       <div>
         <div
@@ -29,26 +48,40 @@ const { title } = Astro.props
         >
         </div>
         <slot />
+
+        <!-- <bento-lightbox-gallery></bento-lightbox-gallery>
+        <figure>
+          <img
+            id="hero-img"
+            lightbox="toronto"
+            src="https://picsum.photos/1600/900?image=1075"
+            alt="picture of cn tower."
+          />
+          <figcaption class="image">
+            toronto's cn tower was built in 1976 and was the tallest
+            free-standing structure until 2007.
+          </figcaption>
+        </figure> -->
       </div>
     </main>
     <style is:global>
       @font-face {
         font-family: "Saans";
-        src: url("/fonts/Saans-Regular.woff2") format("woff2");
+        src: url("/newWeb/fonts/Saans-Regular.woff2") format("woff2");
         font-weight: normal;
         font-style: normal;
       }
 
       @font-face {
         font-family: "Saans";
-        src: url("/fonts/Saans-Medium.woff2") format("woff2");
+        src: url("/newWeb/fonts/Saans-Medium.woff2") format("woff2");
         font-weight: 500;
         font-style: normal;
       }
 
       @font-face {
         font-family: "Saans";
-        src: url("/fonts/Saans-Bold.woff2") format("woff2");
+        src: url("/newWeb/fonts/Saans-Bold.woff2") format("woff2");
         font-weight: bold;
         font-style: normal;
       }

@@ -7,6 +7,7 @@ interface Props {
   imageSrc: string
   className?: string
   align: string
+  viewTransition: string
 }
 
 export interface CardItem {
@@ -14,14 +15,20 @@ export interface CardItem {
   link: string
 }
 
-const { href, title, body, items, imageSrc, className, align } = Astro.props
+const { href, title, body, items, imageSrc, className, align, viewTransition } =
+  Astro.props
 import "@/components/Card/styles.css"
+
+console.log(
+  viewTransition,
+  "---------------------------------------------------- viewTransition 🍍🍍"
+)
 ---
 
 <li
-  class={`p-6 transition duration-300 ease-out brightness-75 hover:brightness-100 border-4 max-w-md hover:border-primary-500 w-[30rem] pt-10 ${className}`}
+  class={`p-6 transition duration-300 ease-out brightness-75 hover:brightness-100 border-4 max-w-md hover:border-primary-500 w-[30rem] pt-10 px-[46px] ${className}`}
 >
-  <a href={href} class="max-w-md">
+  <a href={href} transition:name={viewTransition} class="max-w-md">
     {
       align === "left" && (
         <h2

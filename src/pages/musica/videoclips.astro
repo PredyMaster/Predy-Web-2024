@@ -6,5 +6,13 @@ import Layout from "@/layouts/LayoutMusic.astro"
   <div class="flex justify-center flex-col items-center">
     <h1 transition:name="Videoclips">Videoclips</h1>
     <p>Este es el contenido de mi página principal.</p>
+
+    <video id="myVideoPlayer" controls class="rounded-xl mt-20">
+      <source
+        src={`${import.meta.env.PUBLIC_BASE_PATH}videos/Tema El ultimo titan ( Rambla prim ).mp4`}
+        type="video/mp4"
+      />
+      Tu navegador no soporta la etiqueta de video.
+    </video>
   </div>
 </Layout>
