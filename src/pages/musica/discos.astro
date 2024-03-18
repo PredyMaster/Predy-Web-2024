@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/LayoutMusic.astro"
+import Player from "@/components/ui/Player"
+import getDiscos from "@/api/getDiscos"
+import ConsoleLogger from "@/components/ConsoleInfo/ConsoleLogger"
+import InfoDisk from "@/components/page/InfoDisk"
+
+const Disks = await getDiscos()
+---
+
+<Layout title="Página Principal">
+  <div class="flex justify-center flex-col items-center max-w-[45rem] mx-auto">
+    <h1 transition:name="Discos">Discos</h1>
+    <p>Este es el contenido de mi página principal.</p>
+
+    <!-- <ConsoleLogger client:only info={disk} /> -->
+
+    {Disks.map((disk) => <InfoDisk disk={disk} />)}
+
+    <!-- <Player client:only className="mt-20 rounded-md" /> -->
+  </div>
+</Layout>
