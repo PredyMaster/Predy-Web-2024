@@ -1,4 +1,5 @@
 import { Disco } from "@/types/Disco"
+import Player from "../ui/Player"
 
 interface infoDiskProps {
   disk: Disco
@@ -19,10 +20,13 @@ export default function InfoDisk({ disk }: infoDiskProps) {
       <ul>
         {disk.canciones.map((song, index) => {
           return (
-            <li
-              key={song.titulo + index}
-              className="text-sm"
-            >{`${song.order} - ${song.titulo}`}</li>
+            <>
+              <li
+                key={song.titulo + index}
+                className="text-sm"
+              >{`${song.order} - ${song.titulo}`}</li>
+              <Player disco="inestable" song={song.audio} />
+            </>
           )
         })}
       </ul>

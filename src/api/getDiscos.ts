@@ -3,6 +3,7 @@ import { Disco } from "@/types/Disco"
 export default function getDiscos(): Disco[] {
   const discos: Disco[] = [
     {
+      id: "0c0d8655-2682-43c5-8eb8-ea27ec1af7f9",
       nombre: "El último titán",
       portada:
         "https://mp3.hhgroups.com/albumes/Predy-Delantera_El-ultimo-titan-9795.jpg",
@@ -21,6 +22,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "01. Predy - Dale duro",
+          videoAudio: "",
         },
         {
           order: 2,
@@ -30,6 +33,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "02. Predy - Xpresat",
+          videoAudio: "",
         },
         {
           order: 3,
@@ -39,6 +44,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: true,
           urlVideoclip: "",
           duracion: "",
+          audio: "03. Predy - El ultimo titan",
+          videoAudio: "",
         },
         {
           order: 4,
@@ -48,6 +55,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "04. Predy - Predyflip 360",
+          videoAudio: "",
         },
         {
           order: 5,
@@ -57,6 +66,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "05. Predy - Quieren ser mayores",
+          videoAudio: "",
         },
         {
           order: 6,
@@ -66,6 +77,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "06. Predy - Rapicidio",
+          videoAudio: "",
         },
         {
           order: 7,
@@ -76,6 +89,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: true,
           urlVideoclip: "",
           duracion: "",
+          audio: "07. Predy - AK47 (con Palay)",
+          videoAudio: "",
         },
         {
           order: 8,
@@ -85,6 +100,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "08. Predy - Generacion 80",
+          videoAudio: "",
         },
         {
           order: 9,
@@ -94,6 +111,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "09. Predy - Contra el olimpo",
+          videoAudio: "",
         },
         {
           order: 10,
@@ -103,6 +122,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "10. Predy - Tocamela otra vez",
+          videoAudio: "",
         },
         {
           order: 11,
@@ -113,11 +134,13 @@ export default function getDiscos(): Disco[] {
           featuring: "Chucky",
           urlVideoclip: "",
           duracion: "",
+          audio: "11. Predy - Dharmaggedon (con Chucky)",
+          videoAudio: "",
         },
       ],
     },
-
     {
+      id: "258d5f42-6355-4ff4-9a8b-900244e91aa9",
       nombre: "2.0",
       portada:
         "https://mp3.hhgroups.com/albumes/Predy-Delantera_El-ultimo-titan-9795.jpg",
@@ -138,6 +161,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "01. Predy - Pirateria on (con Dj Erixon)",
+          videoAudio: "",
         },
         {
           order: 2,
@@ -148,6 +173,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "02. Predy - Rabia contenida (con Eneko y Gareta)",
+          videoAudio: "",
         },
         {
           order: 3,
@@ -157,6 +184,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: true,
           urlVideoclip: "",
           duracion: "",
+          audio: "03. Predy - Electroman (con Dj Erixon)",
+          videoAudio: "",
         },
         {
           order: 4,
@@ -167,6 +196,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "04. Predy - Dyseno flow (con Smilita)",
+          videoAudio: "",
         },
         {
           order: 5,
@@ -176,6 +207,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "05. Predy - Y para colmo (con Koar y Bikos)",
+          videoAudio: "",
         },
         {
           order: 6,
@@ -185,6 +218,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "06. Predy - 2.0 evolution",
+          videoAudio: "",
         },
         {
           order: 7,
@@ -194,11 +229,13 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "07. Predy - El ultimo titan (con Dj Erixon) (Remix)",
+          videoAudio: "",
         },
       ],
     },
-
     {
+      id: "0848bc89-99bb-457a-a944-36ecd6af4f2e",
       nombre: "Dopamina",
       portada:
         "https://mp3.hhgroups.com/albumes/Predy-Delantera_El-ultimo-titan-9795.jpg",
@@ -217,6 +254,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "01. Predy - La primera en la frente",
+          videoAudio: "",
         },
         {
           order: 2,
@@ -226,6 +265,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: true,
           urlVideoclip: "",
           duracion: "",
+          audio: "02. Predy - No me dejan",
+          videoAudio: "",
         },
         {
           order: 3,
@@ -236,6 +277,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: true,
           urlVideoclip: "",
           duracion: "",
+          audio: "03. Predy - Popeye el infiel (con Kapo)",
+          videoAudio: "",
         },
         {
           order: 4,
@@ -246,6 +289,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "04. Predy - Voy a romper internet (con Smilita)",
+          videoAudio: "",
         },
         {
           order: 5,
@@ -256,6 +301,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "05. Predy - Danger (con Koar)",
+          videoAudio: "",
         },
         {
           order: 6,
@@ -265,6 +312,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "06. Predy - Hiphoputa",
+          videoAudio: "",
         },
         {
           order: 7,
@@ -274,6 +323,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "07. Predy - Duchafobia",
+          videoAudio: "",
         },
         {
           order: 8,
@@ -284,6 +335,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "08. Predy - Almas de barrio (con Kar)",
+          videoAudio: "",
         },
         {
           order: 9,
@@ -293,6 +346,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "09. Predy - Lo se canto mal",
+          videoAudio: "",
         },
         {
           order: 10,
@@ -302,6 +357,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "10. Predy - Rap game",
+          videoAudio: "",
         },
         {
           order: 11,
@@ -311,6 +368,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "11. Predy - Fapman",
+          videoAudio: "",
         },
         {
           order: 12,
@@ -321,6 +380,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "12. Predy - Dos caminos (con Smilita)",
+          videoAudio: "",
         },
         {
           order: 13,
@@ -330,6 +391,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "13. Predy - Marketing de managers",
+          videoAudio: "",
         },
         {
           order: 14,
@@ -339,6 +402,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "14. Predy - Cntrrapsupr",
+          videoAudio: "",
         },
         {
           order: 15,
@@ -348,11 +413,13 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "15. Predy - Salgo poco de fiesta",
+          videoAudio: "",
         },
       ],
     },
-
     {
+      id: "421a0fe4-f3ac-4b62-aca3-dc0d5f18e9f0",
       nombre: "Inestable",
       portada:
         "https://mp3.hhgroups.com/albumes/Predy-Delantera_El-ultimo-titan-9795.jpg",
@@ -372,6 +439,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "01. Predy - Hello world",
+          videoAudio: "",
         },
         {
           order: 2,
@@ -381,6 +450,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "02. Predy - Inestable",
+          videoAudio: "",
         },
         {
           order: 3,
@@ -390,6 +461,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: true,
           urlVideoclip: "",
           duracion: "",
+          audio: "03. Predy - Se cagan encima",
+          videoAudio: "",
         },
         {
           order: 4,
@@ -400,6 +473,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "04. Predy - Acuérdate de mi cuando seas famoso (con Blon)",
+          videoAudio: "",
         },
         {
           order: 5,
@@ -410,6 +485,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "05. Predy - En mis tiempos (con Dakob)",
+          videoAudio: "",
         },
         {
           order: 6,
@@ -419,6 +496,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "06. Predy - Ponte eufórico mix",
+          videoAudio: "",
         },
         {
           order: 7,
@@ -428,6 +507,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "07. Predy - La mierda sabe a chocolate (con Dj Dolmen)",
+          videoAudio: "",
         },
         {
           order: 8,
@@ -438,6 +519,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "08. Predy - Mitades (con Kapo 013)",
+          videoAudio: "",
         },
         {
           order: 9,
@@ -447,6 +530,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "09. Predy - What what",
+          videoAudio: "",
         },
         {
           order: 10,
@@ -456,6 +541,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "10. Predy - Espantatias",
+          videoAudio: "",
         },
         {
           order: 11,
@@ -466,6 +553,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "11. Predy - Tengo un amigo que... (con Dawizard)",
+          videoAudio: "",
         },
         {
           order: 12,
@@ -475,6 +564,8 @@ export default function getDiscos(): Disco[] {
           tieneVideoclip: false,
           urlVideoclip: "",
           duracion: "",
+          audio: "12. Predy - Toma!",
+          videoAudio: "",
         },
       ],
     },
@@ -484,22 +575,3 @@ export default function getDiscos(): Disco[] {
 }
 
 const discos = getDiscos()
-
-/* 
-
-1.La primera en la frenteEscuchar Predy - La primera en la frenteAñadir Predy - La primera en la frente a un playlistDescargar Predy - La primera en la frenteTrack sin letra... ¿quieres mandárnosla?
-02.No me dejanEscuchar Predy - No me dejanAñadir Predy - No me dejan a un playlistDescargar Predy - No me dejanTrack sin letra... ¿quieres mandárnosla?
-03.Popeye el infiel (con Kapo)Escuchar Predy - Popeye el infiel (con Kapo)Añadir Predy - Popeye el infiel (con Kapo) a un playlistDescargar Predy - Popeye el infiel (con Kapo)Track sin letra... ¿quieres mandárnosla?
-04.Voy a romper internet (con Smilita)Escuchar Predy - Voy a romper internet (con Smilita)Añadir Predy - Voy a romper internet (con Smilita) a un playlistDescargar Predy - Voy a romper internet (con Smilita)Track sin letra... ¿quieres mandárnosla?
-05.Danger (con Koar)Escuchar Predy - Danger (con Koar)Añadir Predy - Danger (con Koar) a un playlistDescargar Predy - Danger (con Koar)Track sin letra... ¿quieres mandárnosla?
-06.HiphoputaEscuchar Predy - HiphoputaAñadir Predy - Hiphoputa a un playlistDescargar Predy - HiphoputaTrack sin letra... ¿quieres mandárnosla?
-07.DuchafobiaEscuchar Predy - DuchafobiaAñadir Predy - Duchafobia a un playlistDescargar Predy - DuchafobiaTrack sin letra... ¿quieres mandárnosla?
-08.Almas de barrio (con Kar)Escuchar Predy - Almas de barrio (con Kar)Añadir Predy - Almas de barrio (con Kar) a un playlistDescargar Predy - Almas de barrio (con Kar)Track sin letra... ¿quieres mandárnosla?
-09.Lo se canto malEscuchar Predy - Lo se canto malAñadir Predy - Lo se canto mal a un playlistDescargar Predy - Lo se canto malTrack sin letra... ¿quieres mandárnosla?
-10.Rap gameEscuchar Predy - Rap gameAñadir Predy - Rap game a un playlistDescargar Predy - Rap gameTrack sin letra... ¿quieres mandárnosla?
-11.FapmanEscuchar Predy - FapmanAñadir Predy - Fapman a un playlistDescargar Predy - FapmanTrack sin letra... ¿quieres mandárnosla?
-12.Dos caminos (con Smilita)Escuchar Predy - Dos caminos (con Smilita)Añadir Predy - Dos caminos (con Smilita) a un playlistDescargar Predy - Dos caminos (con Smilita)Track sin letra... ¿quieres mandárnosla?
-13.Marketing de managersEscuchar Predy - Marketing de managersAñadir Predy - Marketing de managers a un playlistDescargar Predy - Marketing de managersTrack sin letra... ¿quieres mandárnosla?
-14.CntrrapsuprEscuchar Predy - CntrrapsuprAñadir Predy - Cntrrapsupr a un playlistDescargar Predy - CntrrapsuprTrack sin letra... ¿quieres mandárnosla?
-15.Salgo poco de fiesta
- */

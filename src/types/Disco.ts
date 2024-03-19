@@ -7,9 +7,12 @@ export interface Cancion {
   tieneVideoclip: boolean
   urlVideoclip?: string // La URL del videoclip, opcional dependiendo de si tieneVideoclip es true
   duracion?: string // Opcional: Formato HH:MM:SS
+  audio: string
+  videoAudio: string | null
 }
 
 export interface Disco {
+  id: string
   nombre: string
   portada: string // URL de la imagen de la portada
   fechaSalida: Date | string // Soporta tanto un objeto Date como una cadena de texto para la fecha
@@ -18,6 +21,16 @@ export interface Disco {
   canciones: Cancion[]
   descripcion: string
   points: number
+}
+
+export interface Comentario {
+  workId: string
+  order: number
+  nick: string
+  fecha: string
+  texto: string
+  avatar?: string
+  godBoy: boolean
 }
 
 /* const miDisco: Disco = {
