@@ -1,0 +1,43 @@
+---
+import Layout from "@/layouts/LayoutMusic.astro"
+import Player from "@/components/ui/Player"
+import getDiscos from "@/api/getDiscos"
+//import getComents from "@/api/getComents"
+import ConsoleLogger from "@/components/ConsoleInfo/ConsoleLogger"
+import InfoDisk from "@/components/page/InfoDisk"
+import InfoComents from "@/components/page/InfoComents"
+import { text } from "stream/consumers"
+
+const Disks = await getDiscos()
+//const Coments = await getComents()
+---
+
+<Layout title="Página Principal">
+  <div class="flex justify-center flex-col items-center max-w-[45rem] mx-auto">
+    <h1 transition:name="Discos">Discos</h1>
+    <p>Este es el contenido de mi página principal.</p>
+
+    <ConsoleLogger client:only info={Disks} />
+
+    <a href="/musica/discos/ElUltimoTitan" class="text-5xl text-pink-300"
+      >El último titán</a
+    >
+    <a href="/musica/discos/20" class="text-5xl text-pink-300">2.0</a>
+    <a href="/musica/discos/MrPotato" class="text-5xl text-pink-300"
+      >Mr. Potato</a
+    >
+    <a href="/musica/discos/Dopamina" class="text-5xl text-pink-300">Dopamina</a
+    >
+    <a href="/musica/discos/Inestable" class="text-5xl text-pink-300"
+      >Inestable</a
+    >
+
+    <!-- {Disks && Disks.map((disk) => <InfoDisk disk={disk} client:only />)} -->
+    <!-- {
+      Coments &&
+        Coments.map((coment) => <InfoComents comment={coment} client:only />)
+    } -->
+
+    <!-- <Player client:only className="mt-20 rounded-md" /> -->
+  </div>
+</Layout>

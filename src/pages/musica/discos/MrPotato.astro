@@ -1,0 +1,48 @@
+---
+import Layout from "@/layouts/LayoutMusic.astro"
+import getDiscos from "@/api/getDiscos"
+import ConsoleLogger from "@/components/ConsoleInfo/ConsoleLogger"
+import Player from "@/components/ui/Player"
+import DiskInfoSection from "@/components/page/DiskInfoSection"
+const disks = await getDiscos()
+const mrPotato = disks[2]
+const { canciones } = mrPotato
+---
+
+<Layout title="Predy - Mr. Potato">
+  <section
+    class="bg-secondary-800 w-full flex justify-center flex-row items-start text-white"
+  >
+    <DiskInfoSection disk={mrPotato} client:only />
+
+    <div class="max-w-[40rem] mx-auto w-full my-10">
+      <div class="flex flex-col justify-start">
+        <h2 class="text-2xl text-pink-600 pb-6">Canciones:</h2>
+        <ul>
+          {
+            canciones.map((cancion) => {
+              return (
+                <li>
+                  <span>
+                    <span class="text-pink-600 text-xl">{cancion.order}</span>
+                    <span class="mx-2">-</span>
+                    <span class="text-xl">{cancion.titulo}</span>
+                  </span>
+
+                  <Player
+                    disco="mr-potato"
+                    song={cancion.audio}
+                    client:only
+                    className="my-4 rounded-md"
+                  />
+                </li>
+              )
+            })
+          }
+        </ul>
+      </div>
+    </div>
+
+    <ConsoleLogger info={canciones} client:only />
+  </section>
+</Layout>

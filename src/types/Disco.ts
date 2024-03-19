@@ -15,6 +15,7 @@ export interface Disco {
   id: string
   nombre: string
   portada: string // URL de la imagen de la portada
+  contraportada: string // URL de la imagen de la contraportada
   fechaSalida: Date | string // Soporta tanto un objeto Date como una cadena de texto para la fecha
   colaboradores: string[] // Lista de nombres de colaboradores en el disco
   descargas: number
