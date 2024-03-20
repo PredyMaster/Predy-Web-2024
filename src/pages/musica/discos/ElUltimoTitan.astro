@@ -2,9 +2,9 @@
 import Layout from "@/layouts/LayoutMusic.astro"
 import getDiscos from "@/api/getDiscos"
 import ConsoleLogger from "@/components/ConsoleInfo/ConsoleLogger"
-import Player from "@/components/ui/Player"
 import DiskInfoSection from "@/components/page/DiskInfoSection"
 import PlayerSection from "@/components/page/PlayerSection"
+
 const disks = await getDiscos()
 const elUltimoTitan = disks[0]
 const { canciones } = elUltimoTitan
@@ -16,34 +16,7 @@ const { canciones } = elUltimoTitan
   >
     <DiskInfoSection disk={elUltimoTitan} client:only />
 
-    <div class="max-w-[40rem] mx-auto w-full my-10">
-      <div class="flex flex-col justify-start">
-        <h2 class="text-2xl text-pink-600 pb-6">Canciones:</h2>
-        <ul>
-          {
-            canciones.map((cancion) => {
-              return (
-                <li>
-                  <span>
-                    <span class="text-pink-600 text-xl">{cancion.order}</span>
-                    <span class="mx-2">-</span>
-                    <span class="text-xl">{cancion.titulo}</span>
-                  </span>
-
-                  <Player
-                    disco="el-ultimo-titan"
-                    song={cancion.audio}
-                    client:only
-                    className="my-4 rounded-md"
-                  />
-                </li>
-              )
-            })
-          }
-        </ul>
-      </div>
-    </div>
-    <!-- <PlayerSection canciones={canciones} /> --- Me he quedado por aqui -->
+    <PlayerSection disco="el-ultimo-titan" canciones={canciones} client:only />
 
     <ConsoleLogger info={canciones} client:only />
   </section>

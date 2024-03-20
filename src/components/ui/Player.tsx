@@ -7,11 +7,6 @@ interface PlayerProps {
   className?: string
 }
 export default function Player({ disco, song, className }: PlayerProps) {
-  console.log(
-    `${import.meta.env.PUBLIC_BASE_PATH}music/discos/${disco}/${song}.mp3`,
-    " song"
-  )
-
   return (
     <>
       {/*     <AudioPlayer
