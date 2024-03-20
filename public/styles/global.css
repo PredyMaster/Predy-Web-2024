@@ -1,3 +1,140 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-blue-800: #1e40af;
+  --color-blue-600: #2563eb;
+  --color-blue-400: #60a5fa;
+  --color-blue-50: #eff6ff;
+  --color-pink-800: #9d174d;
+  --color-pink-600: #db2777;
+  --color-pink-400: #f472b6;
+  --color-pink-50: #fdf2f8;
+  --color-green-800: #166534;
+  --color-green-600: #16a34a;
+  --color-green-50: #f0fdf4;
+
+  font-family: "Hind", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 1.2em;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border: 0.3em solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 14px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #afb7c2;
+  border-style: solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.tailwindCheck {
+  border-width: 1px;
+  border-color: rgb(203 213 225);
+  cursor: pointer;
+}
+
+.tailwindCheck:checked {
+  border: none;
+}
+.tailwindCheck:checked:after {
+  content: "✔";
+  color: white;
+  border: none;
+}
+summary {
+  position: relative;
+}
+summary::marker {
+  content: none;
+}
+summary::before,
+summary::after {
+  content: "";
+}
+summary::after {
+  border-style: solid;
+  border-width: 0.125em 0.125em 0 0;
+  border-color: #94a3b8;
+  content: "";
+  display: inline-block;
+  height: 9px;
+  left: 8px;
+  position: relative;
+  top: 2px;
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 9px;
+}
+[open] summary::after {
+  transform: rotate(-45deg);
+  transform-origin: 100% 50%;
+}
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  outline: none;
+}
+.no-arrows:focus {
+  outline: none;
+}
+
+.no-arrows {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbarLite::-webkit-scrollbar {
+  width: 1em;
+}
+
+.scrollbarLite::-webkit-scrollbar-track {
+  border: none;
+  background-color: white !important;
+  border-color: none;
+}
+
+.scrollbarLite::-webkit-scrollbar-thumb {
+  background-color: #e2e8f0;
+  outline: none;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+}
+.has-tooltip:hover .tooltip {
+  visibility: visible;
+  z-index: 100;
+}
