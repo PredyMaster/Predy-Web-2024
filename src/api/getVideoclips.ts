@@ -1,4 +1,4 @@
-export function getDiscos(): any[] {
+export function getVideoclips(): any[] {
   const videoclips: any[] = [
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -164,91 +164,207 @@ export function getDiscos(): any[] {
       mezcla: "",
       originalLikes: 17,
     },
-  ]
 
-  return videoclips
-}
-
-export function getPredytube(): any[] {
-  const predytube: any[] = [
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Eso es todo amigos",
+      Titulo: "No solo digo tonterías",
       thumbnail: "",
-      fechaSalida: "2016-04-20",
-      VisualizacionesYoutube: 510,
+      fechaSalida: "2015-11-15",
+      VisualizacionesYoutube: 410,
       descripcion:
-        "Bueno, ya se ha acabado el proyecto, era lógico ¿no? también por otra parte... Pero no os preocupéis porque voy a seguir subiendo vídeos al canal, pero sin respetar el hecho de sacarlos cada miércoles. Los nuevos vídeos vendrán en función de mi disponibilidad, no olvidéis suscribiros para estar al tanto de mis locuras. Espero que os lo hayáis pasado genial con este proyecto llamado Dyferente y en breves vuelvo con locuras nuevas! :P Un abrazo enorme chavalada!!! :P",
+        "Tema inedito... porque yo también puedo hacer temas tranquilos y reflexivos",
       featuring: "",
       beat: "",
       mezcla: "",
-      originalLikes: 32,
+      originalLikes: 19,
     },
 
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "El placer de los artistas",
+      Titulo: "Speech Therapist",
       thumbnail: "",
-      fechaSalida: "2016-04-13",
-      VisualizacionesYoutube: 802,
+      fechaSalida: "2015-06-28",
+      VisualizacionesYoutube: 338,
       descripcion:
-        "Y volvemos con mas!, aprovechamos la barbacoa, los amigos, el buen rollo y el cumpleaños de Chucky para grabar un Predytube de como fue nuestra tarde. Este vídeo no hubiera sido posible sin Tacho. Espero que lo disfrutéis y solo me queda mandar un beso a todos  (ya que hoy es el día del Beso) y en especial a los que han participado en el clip, costa, alex, iff, chucky etc...",
+        "Tema inedito... porque yo también puedo hacer temas tranquilos y reflexivos",
+      featuring: "Correpa",
+      beat: "A Lil Different EP",
+      mezcla: "",
+      originalLikes: 8,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "Funktastico! (Especial 307 suscriptores)",
+      thumbnail: "",
+      fechaSalida: "2015-05-01",
+      VisualizacionesYoutube: 497,
+      descripcion:
+        "Para agradecer que últimamente esta aumentando mi número de suscriptores e preparado un vídeo cantando un fragmento de un tema inédito, espero que os guste, un saludo!",
       featuring: "",
       beat: "",
-      mezcla: "Cansino (Nunca Piso Freno)",
+      mezcla: "",
+      originalLikes: 21,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "ODR2015 Aspirante Predy",
+      thumbnail: "",
+      fechaSalida: "2015-03-17",
+      VisualizacionesYoutube: 1523,
+      descripcion: "Participación para el evento de  www.olimpiadadelrap.com",
+      featuring: "",
+      beat: "",
+      mezcla: "",
+      originalLikes: 51,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "One shot",
+      thumbnail: "",
+      fechaSalida: "2014-09-23",
+      VisualizacionesYoutube: 3028,
+      descripcion: "One shot, vídeo a una sola toma.",
+      featuring: "",
+      beat: "",
+      mezcla: "",
+      originalLikes: 67,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "3 Días",
+      thumbnail: "",
+      fechaSalida: "2014-08-07",
+      VisualizacionesYoutube: 1279,
+      descripcion:
+        "Videoclip 3 Días, la idea del tema es que a sido preparado todo en tan solo 3 días, se a escrito, grabado, mezclado, grabado el vídeo y editado en tan solo 3 días sin la colaboración de ninguna persona.",
+      featuring: "",
+      beat: "",
+      mezcla: "",
+      originalLikes: 29,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "Se cagan encima",
+      thumbnail: "",
+      fechaSalida: "2014-07-31",
+      VisualizacionesYoutube: 3599,
+      descripcion:
+        "Videoclip en el cual me va creciendo la barba a la vez que canto el track y unas 80 personas participan en el estribillo.",
+      featuring: "",
+      beat: "Knife Party",
+      mezcla: "",
+      originalLikes: 57,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "Track-Tor Yellow",
+      thumbnail: "",
+      fechaSalida: "2014-04-18",
+      VisualizacionesYoutube: 236,
+      descripcion:
+        "Un Track de esos que me escribo, grabo y hago un video en un día.",
+      featuring: "",
+      beat: "",
+      mezcla: "",
+      originalLikes: 10,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "ODR2014 Aspirante Predy",
+      thumbnail: "",
+      fechaSalida: "2014-02-20",
+      VisualizacionesYoutube: 2776,
+      descripcion:
+        "Vídeo de presentación de Predy para http://www.olimpiadadelrap.com/",
+      featuring: "",
+      beat: "",
+      mezcla: "",
+      originalLikes: 91,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "Electroman",
+      thumbnail: "",
+      fechaSalida: "2014-01-24",
+      VisualizacionesYoutube: 1277,
+      descripcion:
+        "Este videoclip del track de Electroman del disco de 2.0, tenía que salir en 2010 pero por diversos motivos no vio la luz, y ahora 4 años mas tarde vuelvo a recuperar las tomas para poder recuperar el proyecto y poderoslo enseñar de forma Inedita.",
+      featuring: "",
+      beat: "",
+      mezcla: "",
+      originalLikes: 18,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "#1Minuto",
+      thumbnail: "",
+      fechaSalida: "2013-09-20",
+      VisualizacionesYoutube: 2020,
+      descripcion: "Videoclip de #1Minuto.",
+      featuring: "",
+      beat: "",
+      mezcla: "Koar (Soulteam)",
       originalLikes: 33,
     },
 
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Predytube especial versión South Park",
+      Titulo: "Aire 2013",
       thumbnail: "",
-      fechaSalida: "2016-04-06",
-      VisualizacionesYoutube: 719,
+      fechaSalida: "2013-08-19",
+      VisualizacionesYoutube: 2020,
       descripcion:
-        "Hoy toca un vídeo especial, celebrando que ya hemos pasado los 10 Predytubes, he decidido hacer un videoclip en formato South Park.",
-      featuring: "Dj Xino",
-      beat: "",
-      mezcla: "Cansino (PlaymoBeats)",
-      originalLikes: 52,
-    },
-
-    {
-      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "No vas a creer lo que hace Predy en el bosque",
-      thumbnail: "",
-      fechaSalida: "2016-03-30",
-      VisualizacionesYoutube: 599,
-      descripcion:
-        "Un segundo es una foto, de esa idea nace el Predytube de esta semana.",
-      featuring: "Lorena Giner",
-      beat: "",
-      mezcla: "Cansino (PlaymoBeats)",
-      originalLikes: 43,
-    },
-
-    {
-      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Sacado de la patilla",
-      thumbnail: "",
-      fechaSalida: "2016-03-23",
-      VisualizacionesYoutube: 379,
-      descripcion:
-        "¿Queríais espontaneidad? ¿algo fresco? Pues que mejor que un freestyle, recién sacado de la patilla!!! xD, No es una improvisación perfecta, pero bueno, almenos tiene patas y se va arrastrando por el suelo mientras emite algún que otro sonido.",
+        "Os dejo con un tema Inédito que no saldrá en ningún trabajo mio, simplemente es un tema suelto que escribí en 1 horilla por el mero motivo de que me apetecía.",
       featuring: "",
-      beat: "IduBeats",
+      beat: "",
       mezcla: "",
-      originalLikes: 30,
+      originalLikes: 14,
     },
 
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Sopa de Letras",
+      Titulo: "Encontré a Wifly",
       thumbnail: "",
-      fechaSalida: "2016-03-17",
-      VisualizacionesYoutube: 238,
+      fechaSalida: "2012-12-25",
+      VisualizacionesYoutube: 579,
       descripcion:
-        "El Predytube de esta semana es un lyric vídeo bajo el contexto de un tema buen rollero para sacaros una sonrisa.",
+        "Tema para el concurso de: S-Kill da Beat de MuthaFunk Company / La canción esta inspirada en el tema de Donde esta wifly? del grupo sevillano SFDK.",
+      featuring: "",
+      beat: "",
+      mezcla: "Koar (Soulteam)",
+      originalLikes: 15,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "No me dejan",
+      thumbnail: "",
+      fechaSalida: "2012-11-01",
+      VisualizacionesYoutube: 15042,
+      descripcion:
+        "Tema para el concurso de: S-Kill da Beat de MuthaFunk Company / La canción esta inspirada en el tema de Donde esta wifly? del grupo sevillano SFDK.",
+      featuring: "Btta Designs",
+      beat: "",
+      mezcla: "",
+      originalLikes: 110,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "2 a Sako",
+      thumbnail: "",
+      fechaSalida: "2012-05-13",
+      VisualizacionesYoutube: 447,
+      descripcion: "Tema inedito 2012",
       featuring: "",
       beat: "",
       mezcla: "",
@@ -257,115 +373,100 @@ export function getPredytube(): any[] {
 
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "¿Aún existe la palabra toyako?",
+      Titulo: "Voy a romper internet",
       thumbnail: "",
-      fechaSalida: "2016-03-09",
-      VisualizacionesYoutube: 946,
+      fechaSalida: "2012-02-01",
+      VisualizacionesYoutube: 11208,
+      descripcion: "Tema inedito 2012",
+      featuring: "Smilita",
+      beat: "Er Guille",
+      mezcla: "Koar (Solteam)",
+      originalLikes: 234,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "Presentación Dopamina",
+      thumbnail: "",
+      fechaSalida: "2011-08-13",
+      VisualizacionesYoutube: 705,
       descripcion:
-        "¿Aún existe la palabra Toyako? Toyako es una palabra que se utilizaba en los inicios de el Hip-hop para desprestigiar a alguien, (es un adjetivo de Incompetente) el vídeo esta enfocado en un graffiti puesto que es en el ámbito donde se suele utilizar mas este calificativo despectivo.",
+        "Un pequeño adelanto de lo que podréis ver en mi nuevo trabajo musical llamado Dopamina, espero que lo disfrutéis, en breves pondré por aquí el enlace para poderlo descargar de forma gratuita, un saludo a todos.",
       featuring: "",
       beat: "",
       mezcla: "",
-      originalLikes: 34,
+      originalLikes: 11,
     },
 
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Estruc tuc tuc tuc turas",
+      Titulo: "Ak 47",
       thumbnail: "",
-      fechaSalida: "2016-03-02",
-      VisualizacionesYoutube: 560,
+      fechaSalida: "2009-12-31",
+      VisualizacionesYoutube: 2929,
       descripcion:
-        "Esta vez desde Predytube nos hemos enfocado en una parte muy concreta de la música, se trata de la métrica. Así que aquí tenéis un montón de estruc tuc tuc tuc turas! que las disfrutéis!",
-      featuring: "",
-      beat: "Fx M Black Beats",
-      mezcla: "",
-      originalLikes: 28,
-    },
-
-    {
-      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Dos colgaos + Francia + Flow = Flower ",
-      thumbnail: "",
-      fechaSalida: "2016-02-24",
-      VisualizacionesYoutube: 350,
-      descripcion:
-        "Esta vez os traemos un Predytube algo internacional, desde Francia, concretamente la ciudad de Lyon llega con un estilo mas fresco el videoclip de Flower ambientado en una estética comic para desarrollar este viaje trambolikoh!",
+        "Aquí os traigo el nuevo videoclip junto a Palay del tema AK-47 de la maqueta El Último Titán, espero que lo disfruteis, por ultimo un agradecimiento a todos los que participaron en el videoclip.",
       featuring: "",
       beat: "",
       mezcla: "",
-      originalLikes: 20,
+      originalLikes: 29,
     },
 
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "20 SONGS TAG CHALLENGE",
+      Titulo: "Trailer videoclip Ak 47",
       thumbnail: "",
-      fechaSalida: "2016-02-17",
-      VisualizacionesYoutube: 438,
+      fechaSalida: "2009-10-22",
+      VisualizacionesYoutube: 613,
       descripcion:
-        "Pues nada, siguiente, el siguiente vídeo se trata de un challenge, el de 20 songs tag, o el tag de las 20 canciones, se trata de revelar un cuestionario de preguntas relacionadas con la música.",
+        "El dia 1 de enero despues de las campanadas sera colgado el videoclip de Ak 47, de la maqueta de El ultimo titan, disponible en WWW.PREDY.ES",
       featuring: "",
       beat: "",
       mezcla: "",
-      originalLikes: 35,
+      originalLikes: 1,
     },
 
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Aire",
+      Titulo: "Videoclip Generación 80",
       thumbnail: "",
-      fechaSalida: "2016-02-10",
-      VisualizacionesYoutube: 522,
+      fechaSalida: "2009-07-28",
+      VisualizacionesYoutube: 10364,
       descripcion:
-        "En esta ocasión #Predytube os trae algo #Dyferente como siempre, esta vez es la versión melódica del tema de Aire que vio la luz en el año 2013.",
-      featuring: "",
-      beat: "Jay Beat",
-      mezcla: "Cansino (Playmobeats)",
-      originalLikes: 44,
-    },
-
-    {
-      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "GamePlay de Rap en Español",
-      thumbnail: "",
-      fechaSalida: "2016-02-03",
-      VisualizacionesYoutube: 546,
-      descripcion:
-        "Ahora usando un formato nunca antes visto en una canción, se trata de un game play de Rap, en la que tanto el videojuego como el jugador van acorde con la canción del clip.",
-      featuring: "David",
-      beat: "",
-      mezcla: "",
-      originalLikes: 33,
-    },
-    {
-      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "El mejor Thug Life RAP en Español!",
-      thumbnail: "",
-      fechaSalida: "2016-01-27",
-      VisualizacionesYoutube: 1501,
-      descripcion:
-        "Baung!! Predy trae el mejor Gangsta Rap al micro chavales, ¿Qué porqué es el mejor? Porque me lo ha dicho mi abuela.",
-      featuring: "",
-      beat: "California Livin",
-      mezcla: "",
-      originalLikes: 57,
-    },
-
-    {
-      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Llega Predytube!!!",
-      thumbnail: "",
-      fechaSalida: "2016-02-20",
-      VisualizacionesYoutube: 1922,
-      descripcion:
-        "Vuelve Predy Y eso no es todo amigos!, porque comienza Predytube, cada miércoles tendréis vídeo en este canal así que Suscribiros y uniros a la familia ;)!",
+        "Videoclip oficial del tema Generación 80 de la maqueta gratuita El Último Titán.",
       featuring: "",
       beat: "",
-      mezcla: "Cansino (PlaymoBeats)",
-      originalLikes: 69,
+      mezcla: "",
+      originalLikes: 77,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "Concierto El último titán, Rambla prim.",
+      thumbnail: "",
+      fechaSalida: "2009-06-14",
+      VisualizacionesYoutube: 614,
+      descripcion:
+        "Concierto de Predy, de el tema El ultimo titan, en Rambla prim, junto a palay.",
+      featuring: "",
+      beat: "",
+      mezcla: "",
+      originalLikes: 3,
+    },
+
+    {
+      id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
+      Titulo: "Presentación Dopamina",
+      thumbnail: "",
+      fechaSalida: "2011-08-13",
+      VisualizacionesYoutube: 705,
+      descripcion: "Tema inedito 2012",
+      featuring: "",
+      beat: "",
+      mezcla: "",
+      originalLikes: 11,
     },
   ]
 
-  return predytube
+  return videoclips
 }
