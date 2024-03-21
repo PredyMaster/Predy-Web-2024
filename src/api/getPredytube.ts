@@ -14,6 +14,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "",
       originalLikes: 32,
+      material: "Eso es todo amigos",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -29,6 +30,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "Cansino (Nunca Piso Freno)",
       originalLikes: 33,
+      material: "El placer de los artistas",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -44,6 +46,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "Cansino (PlaymoBeats)",
       originalLikes: 52,
+      material: "Especial version South Park",
     },
 
     {
@@ -60,6 +63,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "Cansino (PlaymoBeats)",
       originalLikes: 43,
+      material: "No vas a creer lo que hace Predy en el bosque",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -75,6 +79,7 @@ export function getPredytube(): any[] {
       beat: "IduBeats",
       mezcla: "",
       originalLikes: 30,
+      material: "Sacado de la patilla",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -90,6 +95,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "",
       originalLikes: 11,
+      material: "Sopa de Letras",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -105,6 +111,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "",
       originalLikes: 34,
+      material: "Aun existe la palabra toyako",
     },
 
     {
@@ -121,6 +128,7 @@ export function getPredytube(): any[] {
       beat: "Fx M Black Beats",
       mezcla: "",
       originalLikes: 28,
+      material: "Estruc tuc tuc tuc turas",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -136,6 +144,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "",
       originalLikes: 20,
+      material: "Flower",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -151,6 +160,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "",
       originalLikes: 35,
+      material: "20Songs",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -166,6 +176,7 @@ export function getPredytube(): any[] {
       beat: "Jay Beat",
       mezcla: "Cansino (Playmobeats)",
       originalLikes: 44,
+      material: "Aire 2016",
     },
 
     {
@@ -182,6 +193,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "",
       originalLikes: 33,
+      material: "GamePlay de Rap",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -197,6 +209,7 @@ export function getPredytube(): any[] {
       beat: "California Livin",
       mezcla: "",
       originalLikes: 57,
+      material: "El mejor Thug Life RAP",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -212,6 +225,7 @@ export function getPredytube(): any[] {
       beat: "",
       mezcla: "Cansino (PlaymoBeats)",
       originalLikes: 69,
+      material: "Llega Predytube",
     },
   ]
 

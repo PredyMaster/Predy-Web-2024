@@ -1,0 +1,47 @@
+---
+import Layout from "@/layouts/LayoutMusic.astro"
+
+import { getPredytube } from "@/api/getPredytube"
+
+const predytube = await getPredytube()
+
+//console.log(predytube, " predytube 🩷")
+---
+
+<Layout title="Página Principal">
+  <div class="flex justify-center flex-col items-center">
+    <h1 transition:name="Videoclips">Predytube</h1>
+    <p>Este es el contenido de mi página principal.</p>
+
+    {
+      predytube.reverse().map((video, index) => {
+        console.log(
+          `${import.meta.env.PUBLIC_BASE_PATH}videos/${video.material}.mp4`,
+          " la ruta que imprime"
+        )
+        return (
+          <div>
+            <p class="text-white font-semibold">{video.Titulo}</p>
+            {video.material ? (
+              <video
+                id={video.Titulo.toLowerCase()
+                  .match(/[a-z]+/g)
+                  .join("-")}
+                controls
+                class="rounded-xl mt-20 max-w-80"
+              >
+                <source
+                  src={`/music/predytube/${video.material}.mp4`}
+                  type="video/mp4"
+                />
+                Tu navegador no soporta la etiqueta de video.
+              </video>
+            ) : (
+              <h1 class="text-7xl text-red-600">FALTA INFO</h1>
+            )}
+          </div>
+        )
+      })
+    }
+  </div>
+</Layout>
