@@ -1,0 +1,57 @@
+---
+// Navegador.astro
+// No necesitas importaciones específicas aquí, solo define tus enlaces
+
+const links = [
+  { href: '/', text: 'Inicio' },
+  { href: '/acerca', text: 'Acerca' },
+  { href: '/contacto', text: 'Contacto' },
+];
+
+
+const linkMusic = [
+
+{
+    label: "Home",
+    href: "../",
+  },
+  {
+    label: "Videoclips",
+    href: "./videoclips",
+  },
+  {
+    label: "Predytube",
+    href: "./predytube",
+  },
+  {
+    label: "Discos",
+    href: "./discos",
+  },
+  {
+    label: "Conciertos",
+    href: "./conciertos",
+  },
+  {
+    label: "Recortes de prensa",
+    href: "./recortes-de-prensa",
+  },
+  {
+    label: "Extras",
+    href: "./extras",
+  },
+]
+
+
+---
+
+<nav class="text-white shadow-md w-full fixed z-10 border border-slate-900 border-b bg-slate-700 py-3">
+  <ul class="flex justify-center w-full h-12 gap-x-5 align-middle">
+    {linkMusic.map((link) => (
+      <li>
+        <a href={link.href} 
+        class="px-4 py-3 flex justify-center align-middle hover:bg-slate-800 hover:rounded-xl"
+        >{link.label}</a>
+      </li>
+    ))}
+  </ul>
+</nav>
