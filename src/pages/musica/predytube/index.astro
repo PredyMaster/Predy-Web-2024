@@ -1,11 +1,55 @@
 ---
 import Layout from "@/layouts/LayoutMusic.astro"
+import LiteYoutube from "@/components/ui/LiteYoutube.astro"
 
 import { getPredytube } from "@/api/getPredytube"
 
 const predytube = await getPredytube()
 
 //console.log(predytube, " predytube 🩷")
+
+/*
+Esto lo he puesto aquí pero iria abajo
+
+
+
+{
+      predytube.reverse().map((video, index) => {
+        console.log(
+          `${import.meta.env.PUBLIC_BASE_PATH}videos/${video.material}.mp4`,
+          " la ruta que imprime"
+        )
+        return (
+          <div>
+            <p class="text-white font-semibold">{video.Titulo}</p>
+
+            {
+  video.material ? (
+    <video
+      id={video.Titulo.toLowerCase()
+        .match(/[a-z]+/g)
+        .join("-")}
+      controls
+      class="rounded-xl mt-20 max-w-80"
+    >
+      <source src={`/music/predytube/${video.material}.mp4`} type="video/mp4" />
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+  ) : (
+    <h1 class="text-7xl text-red-600">FALTA INFO</h1>
+  )
+}
+          </div>
+        )
+      })
+    }
+
+
+
+
+
+
+ */
 ---
 
 <Layout title="Página Principal">
@@ -22,22 +66,16 @@ const predytube = await getPredytube()
         return (
           <div>
             <p class="text-white font-semibold">{video.Titulo}</p>
-            {video.material ? (
-              <video
-                id={video.Titulo.toLowerCase()
-                  .match(/[a-z]+/g)
-                  .join("-")}
-                controls
-                class="rounded-xl mt-20 max-w-80"
-              >
-                <source
-                  src={`/music/predytube/${video.material}.mp4`}
-                  type="video/mp4"
-                />
-                Tu navegador no soporta la etiqueta de video.
-              </video>
+
+            {video.idYoutube ? (
+              <LiteYoutube
+                videoId={video.idYoutube}
+                title={video.Titulo}
+                backgroundImage={`/music/thumnails-youtube/${video.idYoutube}.jpg`}
+                className="w-[22rem] rounded-xl"
+              />
             ) : (
-              <h1 class="text-7xl text-red-600">FALTA INFO</h1>
+              /* <h1 class="text-7xl text-red-600">FALTA INFO</h1> */ <p />
             )}
           </div>
         )
