@@ -1,11 +1,14 @@
-export function getPredytube(): any[] {
-  const predytube: any[] = [
+import { Video } from "@/types/Video"
+
+export function getPredytube(): Video[] {
+  const predytube: Video[] = [
     {
+      order: 14,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Eso es todo amigos",
+      titulo: "Eso es todo amigos",
       thumbnail: "",
       fechaSalida: "2016-04-20",
-      VisualizacionesYoutube: 510,
+      visualizacionesYoutube: 510,
       descripcion:
         "Bueno, ya se ha acabado el proyecto, era lógico ¿no? también por otra parte... Pero no os preocupéis porque voy a seguir subiendo vídeos al canal, pero sin respetar el hecho de sacarlos cada miércoles. Los nuevos vídeos vendrán en función de mi disponibilidad, no olvidéis suscribiros para estar al tanto de mis locuras. Espero que os lo hayáis pasado genial con este proyecto llamado Dyferente y en breves vuelvo con locuras nuevas! :P Un abrazo enorme chavalada!!! :P",
       descripcionSugerida:
@@ -18,11 +21,12 @@ export function getPredytube(): any[] {
       idYoutube: "I2WQf2w-3vQ",
     },
     {
+      order: 13,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "El placer de los artistas",
+      titulo: "El placer de los artistas",
       thumbnail: "",
       fechaSalida: "2016-04-13",
-      VisualizacionesYoutube: 802,
+      visualizacionesYoutube: 802,
       descripcion:
         "Y volvemos con mas!, aprovechamos la barbacoa, los amigos, el buen rollo y el cumpleaños de Chucky para grabar un Predytube de como fue nuestra tarde. Este vídeo no hubiera sido posible sin Tacho. Espero que lo disfrutéis y solo me queda mandar un beso a todos  (ya que hoy es el día del Beso) y en especial a los que han participado en el clip, costa, alex, iff, chucky etc...",
       descripcionSugerida:
@@ -32,13 +36,15 @@ export function getPredytube(): any[] {
       mezcla: "Cansino (Nunca Piso Freno)",
       originalLikes: 33,
       material: "El placer de los artistas",
+      idYoutube: "yq07wEt3038",
     },
     {
+      order: 12,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Predytube especial versión South Park",
+      titulo: "Predytube especial versión South Park",
       thumbnail: "",
       fechaSalida: "2016-04-06",
-      VisualizacionesYoutube: 719,
+      visualizacionesYoutube: 719,
       descripcion:
         "Hoy toca un vídeo especial, celebrando que ya hemos pasado los 10 Predytubes, he decidido hacer un videoclip en formato South Park.",
       descripcionSugerida:
@@ -48,14 +54,16 @@ export function getPredytube(): any[] {
       mezcla: "Cansino (PlaymoBeats)",
       originalLikes: 52,
       material: "Especial version South Park",
+      idYoutube: "88LxOOO4Zik",
     },
 
     {
+      order: 11,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "No vas a creer lo que hace Predy en el bosque",
+      titulo: "No vas a creer lo que hace Predy en el bosque",
       thumbnail: "",
       fechaSalida: "2016-03-30",
-      VisualizacionesYoutube: 599,
+      visualizacionesYoutube: 599,
       descripcion:
         "Un segundo es una foto, de esa idea nace el Predytube de esta semana.",
       descripcionSugerida:
@@ -65,13 +73,15 @@ export function getPredytube(): any[] {
       mezcla: "Cansino (PlaymoBeats)",
       originalLikes: 43,
       material: "No vas a creer lo que hace Predy en el bosque",
+      idYoutube: "VMdMVUV0zlY",
     },
     {
+      order: 10,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Sacado de la patilla",
+      titulo: "Sacado de la patilla",
       thumbnail: "",
       fechaSalida: "2016-03-23",
-      VisualizacionesYoutube: 379,
+      visualizacionesYoutube: 379,
       descripcion:
         "¿Queríais espontaneidad? ¿algo fresco? Pues que mejor que un freestyle, recién sacado de la patilla!!! xD, No es una improvisación perfecta, pero bueno, almenos tiene patas y se va arrastrando por el suelo mientras emite algún que otro sonido.",
       descripcionSugerida:
@@ -81,13 +91,15 @@ export function getPredytube(): any[] {
       mezcla: "",
       originalLikes: 30,
       material: "Sacado de la patilla",
+      idYoutube: "FuhO96fBecs",
     },
     {
+      order: 9,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Sopa de Letras",
+      titulo: "Sopa de Letras",
       thumbnail: "",
       fechaSalida: "2016-03-17",
-      VisualizacionesYoutube: 238,
+      visualizacionesYoutube: 238,
       descripcion:
         "El Predytube de esta semana es un lyric vídeo bajo el contexto de un tema buen rollero para sacaros una sonrisa.",
       descripcionSugerida:
@@ -97,13 +109,15 @@ export function getPredytube(): any[] {
       mezcla: "",
       originalLikes: 11,
       material: "Sopa de Letras",
+      idYoutube: "UFjijXZQly0",
     },
     {
+      order: 8,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "¿Aún existe la palabra toyako?",
+      titulo: "¿Aún existe la palabra toyako?",
       thumbnail: "",
       fechaSalida: "2016-03-09",
-      VisualizacionesYoutube: 946,
+      visualizacionesYoutube: 946,
       descripcion:
         "¿Aún existe la palabra Toyako? Toyako es una palabra que se utilizaba en los inicios de el Hip-hop para desprestigiar a alguien, (es un adjetivo de Incompetente) el vídeo esta enfocado en un graffiti puesto que es en el ámbito donde se suele utilizar mas este calificativo despectivo.",
       descripcionSugerida:
@@ -113,14 +127,16 @@ export function getPredytube(): any[] {
       mezcla: "",
       originalLikes: 34,
       material: "Aun existe la palabra toyako",
+      idYoutube: "FpM8BwzbIHQ",
     },
 
     {
+      order: 7,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Estruc tuc tuc tuc turas",
+      titulo: "Estruc tuc tuc tuc turas",
       thumbnail: "",
       fechaSalida: "2016-03-02",
-      VisualizacionesYoutube: 560,
+      visualizacionesYoutube: 560,
       descripcion:
         "Esta vez desde Predytube nos hemos enfocado en una parte muy concreta de la música, se trata de la métrica. Así que aquí tenéis un montón de estruc tuc tuc tuc turas! que las disfrutéis!",
       descripcionSugerida:
@@ -130,13 +146,15 @@ export function getPredytube(): any[] {
       mezcla: "",
       originalLikes: 28,
       material: "Estruc tuc tuc tuc turas",
+      idYoutube: "rBEh2ecyc_g",
     },
     {
+      order: 6,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Dos colgaos + Francia + Flow = Flower",
+      titulo: "Dos colgaos + Francia + Flow = Flower",
       thumbnail: "",
       fechaSalida: "2016-02-24",
-      VisualizacionesYoutube: 350,
+      visualizacionesYoutube: 350,
       descripcion:
         "Esta vez os traemos un Predytube algo internacional, desde Francia, concretamente la ciudad de Lyon llega con un estilo mas fresco el videoclip de Flower ambientado en una estética comic para desarrollar este viaje trambolikoh!",
       descripcionSugerida:
@@ -146,13 +164,15 @@ export function getPredytube(): any[] {
       mezcla: "",
       originalLikes: 20,
       material: "Flower",
+      idYoutube: "42t0Dgx2zis",
     },
     {
+      order: 5,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "20 SONGS TAG CHALLENGE",
+      titulo: "20 SONGS TAG CHALLENGE",
       thumbnail: "",
       fechaSalida: "2016-02-17",
-      VisualizacionesYoutube: 438,
+      visualizacionesYoutube: 438,
       descripcion:
         "Pues nada, siguiente, el siguiente vídeo se trata de un challenge, el de 20 songs tag, o el tag de las 20 canciones, se trata de revelar un cuestionario de preguntas relacionadas con la música.",
       descripcionSugerida:
@@ -162,13 +182,15 @@ export function getPredytube(): any[] {
       mezcla: "",
       originalLikes: 35,
       material: "20Songs",
+      idYoutube: "lx6gYerjXGY",
     },
     {
+      order: 4,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Aire",
+      titulo: "Aire",
       thumbnail: "",
       fechaSalida: "2016-02-10",
-      VisualizacionesYoutube: 522,
+      visualizacionesYoutube: 522,
       descripcion:
         "En esta ocasión #Predytube os trae algo #Dyferente como siempre, esta vez es la versión melódica del tema de Aire que vio la luz en el año 2013.",
       descripcionSugerida:
@@ -178,14 +200,16 @@ export function getPredytube(): any[] {
       mezcla: "Cansino (Playmobeats)",
       originalLikes: 44,
       material: "Aire 2016",
+      idYoutube: "HpxbYNgZ70c",
     },
 
     {
+      order: 3,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "GamePlay de Rap en Español",
+      titulo: "GamePlay de Rap en Español",
       thumbnail: "",
       fechaSalida: "2016-02-03",
-      VisualizacionesYoutube: 546,
+      visualizacionesYoutube: 546,
       descripcion:
         "Ahora usando un formato nunca antes visto en una canción, se trata de un game play de Rap, en la que tanto el videojuego como el jugador van acorde con la canción del clip.",
       descripcionSugerida:
@@ -195,13 +219,15 @@ export function getPredytube(): any[] {
       mezcla: "",
       originalLikes: 33,
       material: "GamePlay de Rap",
+      idYoutube: "MjjlWsDMrcE",
     },
     {
+      order: 2,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "El mejor Thug Life RAP en Español!",
+      titulo: "El mejor Thug Life RAP en Español!",
       thumbnail: "",
       fechaSalida: "2016-01-27",
-      VisualizacionesYoutube: 1501,
+      visualizacionesYoutube: 1501,
       descripcion:
         "Baung!! Predy trae el mejor Gangsta Rap al micro chavales, ¿Qué porqué es el mejor? Porque me lo ha dicho mi abuela.",
       descripcionSugerida:
@@ -211,13 +237,15 @@ export function getPredytube(): any[] {
       mezcla: "",
       originalLikes: 57,
       material: "El mejor Thug Life RAP",
+      idYoutube: "z9iiLiePtSg",
     },
     {
+      order: 1,
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
-      Titulo: "Llega Predytube!!!",
+      titulo: "Llega Predytube!!!",
       thumbnail: "",
       fechaSalida: "2016-01-20",
-      VisualizacionesYoutube: 1922,
+      visualizacionesYoutube: 1922,
       descripcion:
         "Vuelve Predy Y eso no es todo amigos!, porque comienza Predytube, cada miércoles tendréis vídeo en este canal así que Suscribiros y uniros a la familia ;)!",
       descripcionSugerida:
@@ -227,6 +255,7 @@ export function getPredytube(): any[] {
       mezcla: "Cansino (PlaymoBeats)",
       originalLikes: 69,
       material: "Llega Predytube",
+      idYoutube: "_pRBs70J2S0",
     },
   ]
 
