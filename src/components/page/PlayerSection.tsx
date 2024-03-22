@@ -22,7 +22,6 @@ export default function PlayerSection({
   disco,
   canciones,
 }: PlayerSectionProps) {
-  console.log(canciones, " canciones")
   return (
     <div className="max-w-[40rem] mx-auto w-full my-10">
       <div className="flex flex-col justify-start">
