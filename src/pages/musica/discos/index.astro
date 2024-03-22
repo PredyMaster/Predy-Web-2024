@@ -7,6 +7,7 @@ import ConsoleLogger from "@/components/ConsoleInfo/ConsoleLogger"
 import InfoDisk from "@/components/page/InfoDisk"
 import InfoComents from "@/components/page/InfoComents"
 import { text } from "stream/consumers"
+import H1Title from "@/components/astroComponents/H1Title.astro"
 
 const Disks = await getDiscos()
 //const Coments = await getComents()
@@ -14,8 +15,10 @@ const Disks = await getDiscos()
 
 <Layout title="Página Principal">
   <div class="flex justify-center flex-col items-center max-w-[45rem] mx-auto">
-    <h1 transition:name="Discos">Discos</h1>
-    <p>Este es el contenido de mi página principal.</p>
+    <H1Title
+      titulo="Discos"
+      descripcion="Este es el contenido de mi página principal."
+    />
 
     <ConsoleLogger client:only info={Disks} />
 

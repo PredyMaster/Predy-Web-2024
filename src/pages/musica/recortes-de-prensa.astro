@@ -1,10 +1,13 @@
 ---
 import Layout from "@/layouts/LayoutMusic.astro"
+import H1Title from "@/components/astroComponents/H1Title.astro"
 ---
 
-<Layout title="Página Principal">
+<Layout title="Medios">
   <div class="flex justify-center flex-col items-center">
-    <h1 transition:name="Recortes de prensa">Recortes de prensa</h1>
-    <p>Este es el contenido de mi página principal.</p>
+    <H1Title
+      titulo="Recortes de prensa"
+      descripcion="Apariciones en diferentes webs y medios de difusión"
+    />
   </div>
 </Layout>

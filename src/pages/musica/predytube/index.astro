@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/LayoutMusic.astro"
 import LiteYoutube from "@/components/ui/LiteYoutube.astro"
+import H1Title from "@/components/astroComponents/H1Title.astro"
 
 import { getPredytube } from "@/api/getPredytube"
 
@@ -54,18 +55,11 @@ Esto lo he puesto aquí pero iria abajo
 
 <Layout title="Predytube">
   <div class="flex justify-center items-start flex-wrap">
-    <div class="text-white text-center mt-4">
-      <h1 transition:name="Predytube">Predytube</h1>
-      <p>Cada miercoles nuevo episodio.</p>
-    </div>
+    <H1Title titulo="Predytube" descripcion="Cada miercoles nuevo episodio." />
 
     <div class="flex flex-row flex-wrap justify-center items-start gap-4">
       {
         predytube.reverse().map((video, index) => {
-          console.log(
-            `${import.meta.env.PUBLIC_BASE_PATH}videos/${video.material}.mp4`,
-            " la ruta que imprime"
-          )
           return (
             <div class="m-2">
               {video.idYoutube ? (
