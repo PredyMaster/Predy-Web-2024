@@ -1,5 +1,4 @@
 ---
-// TituloYDescripcion.astro
 interface Props {
   titulo: string
   descripcion: string
@@ -8,6 +7,11 @@ const { titulo, descripcion } = Astro.props
 ---
 
 <div class="text-white text-center mt-4">
-  <h1 transition:name="Videoclips" class="text-lime-400">{titulo}</h1>
-  <p class="text-red">{descripcion}</p>
+  <h1
+    transition:name="Videoclips"
+    class="text-lime-400 text-5xl mt-8 mb-4 font-semibold uppercase"
+  >
+    {titulo}
+  </h1>
+  <p class="text-red mb-8 text-2xl">{descripcion}</p>
 </div>

@@ -1,0 +1,32 @@
+---
+import LiteYoutube from "@/components/ui/LiteYoutube.astro"
+import { Video } from "@/types/Video"
+
+interface Props {
+  videos: Video[]
+  ruta: string
+}
+const { videos, ruta } = Astro.props
+---
+
+<div class="flex flex-row flex-wrap justify-center items-start gap-4">
+  {
+    videos.map((video, index) => {
+      return (
+        <div class="m-2 px-3">
+          {video.idYoutube && (
+            <div class="flex flex-col">
+              <LiteYoutube
+                videoId={video.idYoutube}
+                title={video.titulo}
+                backgroundImage={`${import.meta.env.PUBLIC_BASE_PATH}/music/thumnails-youtube/${ruta}/${video.idYoutube}.jpg`}
+                className="w-[22rem] rounded-xl"
+              />
+              <p class="text-white font-semibold p-2">{video.titulo}</p>
+            </div>
+          )}
+        </div>
+      )
+    })
+  }
+</div>

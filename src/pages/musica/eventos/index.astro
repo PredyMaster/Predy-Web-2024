@@ -1,42 +1,15 @@
 ---
 import Layout from "@/layouts/LayoutMusic.astro"
-import LiteYoutube from "@/components/ui/LiteYoutube.astro"
 import H1Title from "@/components/astroComponents/H1Title.astro"
+import ShowVideos from "@/components/astroComponents/ShowVideos.astro"
 import { getWordFighters } from "@/api/getWordFighters"
 
 const wordFighters = await getWordFighters()
 ---
 
 <Layout title="Eventos">
-  <div class="flex justify-center items-start flex-wrap">
+  <div class="flex justify-center items-start flex-wrap w-screen">
     <H1Title titulo="Eventos" descripcion="Varios eventos." />
-
-    <div class="flex flex-row flex-wrap justify-center items-start gap-4">
-      {
-        wordFighters.map((video, index) => {
-          console.log(
-            `${import.meta.env.PUBLIC_BASE_PATH}videos/${video.material}.mp4`,
-            " la ruta que imprime"
-          )
-          return (
-            <div class="m-2">
-              {video.idYoutube ? (
-                <div class="flex flex-col w-max">
-                  <LiteYoutube
-                    videoId={video.idYoutube}
-                    title={video.titulo}
-                    backgroundImage={`/music/thumnails-youtube/predytube/${video.idYoutube}.jpg`}
-                    className="w-[22rem] rounded-xl"
-                  />
-                  <p class="text-white font-semibold p-2">{video.titulo}</p>
-                </div>
-              ) : (
-                /* <h1 class="text-7xl text-red-600">FALTA INFO</h1> */ <p />
-              )}
-            </div>
-          )
-        })
-      }
-    </div>
+    <ShowVideos videos={wordFighters} ruta="eventos" />
   </div>
 </Layout>
