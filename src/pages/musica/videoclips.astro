@@ -32,7 +32,7 @@ Forma de cargar un video local
                   <LiteYoutube
                     videoId={video.idYoutube}
                     title={video.titulo}
-                    backgroundImage={`/music/thumnails-youtube/videoclips/${video.idYoutube}.jpg`}
+                    backgroundImage={`${import.meta.env.PUBLIC_BASE_PATH}/music/thumnails-youtube/videoclips/${video.idYoutube}.jpg`}
                     className="w-[22rem] rounded-xl"
                   />
                   <p class="text-white font-semibold p-2">{video.titulo}</p>

@@ -67,7 +67,7 @@ Esto lo he puesto aquí pero iria abajo
                   <LiteYoutube
                     videoId={video.idYoutube}
                     title={video.titulo}
-                    backgroundImage={`/music/thumnails-youtube/predytube/${video.idYoutube}.jpg`}
+                    backgroundImage={`${import.meta.env.PUBLIC_BASE_PATH}/music/thumnails-youtube/predytube/${video.idYoutube}.jpg`}
                     className="w-[22rem] rounded-xl"
                   />
                   <p class="text-white font-semibold p-2">{video.titulo}</p>

@@ -1,10 +1,13 @@
 ---
-import Layout from "@/layouts/LayoutArt.astro"
+import Layout from "@/layouts/LayoutMusic.astro"
+import H1Title from "@/components/astroComponents/H1Title.astro"
 ---
 
-<Layout title="Página Principal">
-  <div class="flex justify-center flex-col items-center">
-    <h1 transition:name="transitionMusica">Musica</h1>
-    <p>Este es el contenido de mi página principal.</p>
+<Layout title="Música">
+  <div class="flex justify-center items-start flex-wrap">
+    <H1Title
+      titulo="Música"
+      descripcion="Pantalla principal donde presentar toda mi música."
+    />
   </div>
 </Layout>
