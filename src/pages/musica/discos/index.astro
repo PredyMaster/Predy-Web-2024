@@ -22,18 +22,13 @@ const Disks = await getDiscos()
 
     <ConsoleLogger client:only info={Disks} />
 
-    <a href="/musica/discos/ElUltimoTitan" class="text-5xl text-pink-300"
-      >El último titán</a
-    >
-    <a href="/musica/discos/20" class="text-5xl text-pink-300">2.0</a>
-    <a href="/musica/discos/MrPotato" class="text-5xl text-pink-300"
-      >Mr. Potato</a
-    >
-    <a href="/musica/discos/Dopamina" class="text-5xl text-pink-300">Dopamina</a
-    >
-    <a href="/musica/discos/Inestable" class="text-5xl text-pink-300"
-      >Inestable</a
-    >
+    <div class="flex flex-col text-5xl text-gray-300">
+      <a href="/musica/discos/ElUltimoTitan">El último titán</a>
+      <a href="/musica/discos/20">2.0</a>
+      <a href="/musica/discos/MrPotato">Mr. Potato</a>
+      <a href="/musica/discos/Dopamina">Dopamina</a>
+      <a href="/musica/discos/Inestable">Inestable</a>
+    </div>
 
     <!-- {Disks && Disks.map((disk) => <InfoDisk disk={disk} client:only />)} -->
     <!-- {
