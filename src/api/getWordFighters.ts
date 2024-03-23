@@ -17,7 +17,7 @@ export function getWordFighters(): Video[] {
       mezcla: "",
       originalLikes: 74,
       material: "",
-      idYoutube: "I2WQf2w-3vQ",
+      idYoutube: "oSAswG6iANE",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -35,7 +35,7 @@ export function getWordFighters(): Video[] {
       mezcla: "",
       originalLikes: 50,
       material: "",
-      idYoutube: "I2WQf2w-3vQ",
+      idYoutube: "VwtNbZbjWVo",
     },
     {
       id: "25143269-58ce-4fb7-ae94-5bad3333ab02",
@@ -52,7 +52,7 @@ export function getWordFighters(): Video[] {
       mezcla: "",
       originalLikes: 34,
       material: "",
-      idYoutube: "I2WQf2w-3vQ",
+      idYoutube: "USIhL2G23Ng",
     },
   ]
 

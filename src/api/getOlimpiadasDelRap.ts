@@ -16,8 +16,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 15,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "HsKxa91h3Rw",
     },
 
     {
@@ -34,8 +34,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 21,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "0l00_QvQzns",
     },
 
     {
@@ -52,8 +52,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 11,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "4AARaPrbgPM",
     },
 
     {
@@ -70,8 +70,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 10,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "QtTaOwen_M8",
     },
 
     {
@@ -88,8 +88,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 17,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "_4GGOXgZikg",
     },
 
     {
@@ -106,8 +106,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 7,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "kAyux9XXjQk",
     },
 
     {
@@ -124,8 +124,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 42,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "Xd_KE3sQ-ZE",
     },
 
     {
@@ -142,8 +142,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 22,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "BlvGnGWf4wg",
     },
 
     {
@@ -160,8 +160,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 8,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "ZMSr4PSV9pM",
     },
 
     {
@@ -178,8 +178,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 2,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "Dxle6C3cTco",
     },
 
     {
@@ -196,8 +196,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 15,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "punyCYBBrEA",
     },
 
     {
@@ -214,8 +214,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 2,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "01Jfq0Zd3F8",
     },
 
     {
@@ -232,8 +232,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 15,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "NCVykTWIiyQ",
     },
 
     {
@@ -250,8 +250,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 0,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "GLKGcelJgQQ",
     },
 
     {
@@ -268,8 +268,8 @@ export function getOlimpiadasDelRap(): Video[] {
       beat: "",
       mezcla: "",
       originalLikes: 29,
-      material: "Eso es todo amigos",
-      idYoutube: "I2WQf2w-3vQ",
+      material: "",
+      idYoutube: "TqlZiDcAazU",
     },
   ]
 

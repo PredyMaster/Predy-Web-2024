@@ -2,14 +2,14 @@
 import Layout from "@/layouts/LayoutMusic.astro"
 import H1Title from "@/components/astroComponents/H1Title.astro"
 import ShowVideos from "@/components/astroComponents/ShowVideos.astro"
-import { getConciertos } from "@/api/getConciertos"
+import { getBatallas } from "@/api/getBatallas"
 
-const conciertos = await getConciertos()
+const batallas = await getBatallas()
 ---
 
-<Layout title="Conciertos">
+<Layout title="Batallas">
   <div class="flex justify-center iflex-wrap w-full flex-col">
-    <H1Title titulo="Conciertos" descripcion="Videos de conciertos y tal" />
-    <ShowVideos videos={conciertos} ruta="conciertos" />
+    <H1Title titulo="Batallas" descripcion="1 contra 1 o en equipo" />
+    <ShowVideos videos={batallas} ruta="batallas" />
   </div>
 </Layout>

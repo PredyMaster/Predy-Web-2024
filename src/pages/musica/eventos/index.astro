@@ -3,13 +3,23 @@ import Layout from "@/layouts/LayoutMusic.astro"
 import H1Title from "@/components/astroComponents/H1Title.astro"
 import ShowVideos from "@/components/astroComponents/ShowVideos.astro"
 import { getWordFighters } from "@/api/getWordFighters"
+import { getOlimpiadasDelRap } from "@/api/getOlimpiadasDelRap"
 
 const wordFighters = await getWordFighters()
+const olimpiadasDelRap = await getOlimpiadasDelRap()
 ---
 
 <Layout title="Eventos">
-  <div class="flex justify-center flex-wrap w-full flex-col">
+  <div
+    class="flex justify-center flex-wrap w-full flex-col text-white text-center"
+  >
     <H1Title titulo="Eventos" descripcion="Varios eventos." />
+
+    <h2 class="text-xl uppercase mb-10">World Fighters</h2>
     <ShowVideos videos={wordFighters} ruta="eventos" />
+
+    <hr class="my-10" />
+    <h2 class="text-xl uppercase mb-10">Olimpiadas del Rap</h2>
+    <ShowVideos videos={olimpiadasDelRap} ruta="eventos" />
   </div>
 </Layout>
