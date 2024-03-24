@@ -1,6 +1,7 @@
 ---
 import LiteYoutube from "@/components/ui/LiteYoutube.astro"
 import { Video } from "@/types/Video"
+import ConsoleLogger from "../ConsoleInfo/ConsoleLogger"
 
 interface Props {
   videos: Video[]
@@ -9,7 +10,9 @@ interface Props {
 const { videos, ruta } = Astro.props
 ---
 
-<div class="flex flex-row flex-wrap justify-center items-start gap-4">
+<div
+  class="flex flex-row flex-wrap justify-center items-start gap-4 text-white"
+>
   {
     videos.map((video, index) => {
       return (
@@ -20,13 +23,22 @@ const { videos, ruta } = Astro.props
                 videoId={video.idYoutube}
                 title={video.titulo}
                 backgroundImage={`${import.meta.env.PUBLIC_BASE_PATH}/music/thumnails-youtube/${ruta}/${video.idYoutube}.jpg`}
-                className="w-[22rem] rounded-xl"
+                className="w-[22rem] rounded-md"
               />
-              <p class="text-white font-semibold p-2">{video.titulo}</p>
+              <div class="flex justify-between p-2">
+                <p class="font-semibold">{video.titulo}</p>
+                <span>{video.visualizacionesYoutube}</span>
+              </div>
+
+              <hr class="my-2 w-[96%] mx-auto" />
+
+              <p class="text-sm p-2">{video.descripcionSugerida}</p>
             </div>
           )}
         </div>
       )
     })
   }
+
+  <ConsoleLogger info={videos} client:only />
 </div>
