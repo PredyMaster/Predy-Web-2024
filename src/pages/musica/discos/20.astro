@@ -14,7 +14,12 @@ const { canciones } = predy20
   <section
     class="bg-secondary-800 w-full flex justify-center flex-row items-start text-white"
   >
-    <DiskInfoSection disk={predy20} client:only />
+    <DiskInfoSection
+      disk={predy20}
+      client:only
+      colorTexto="#ffffff"
+      colorFondo="linear-gradient(90deg, rgba(125,255,7,1) 0%, rgba(255,0,129,1) 100%);"
+    />
 
     <PlayerSection disco="20" canciones={canciones} client:only />
 

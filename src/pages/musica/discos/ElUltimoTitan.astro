@@ -14,10 +14,28 @@ const { canciones } = elUltimoTitan
   <section
     class="bg-secondary-800 w-full flex justify-center flex-row items-start text-white"
   >
-    <DiskInfoSection disk={elUltimoTitan} client:only />
+    <DiskInfoSection
+      disk={elUltimoTitan}
+      client:only
+      colorTexto="#ffffff"
+      colorFondo="#640804"
+    />
 
     <PlayerSection disco="el-ultimo-titan" canciones={canciones} client:only />
 
     <ConsoleLogger info={canciones} client:only />
   </section>
 </Layout>
+
+<style>
+  .text-titan-primary {
+    color: #640804;
+  }
+  .text-titan-secondary {
+    color: white;
+    color: #fff;
+  }
+  .bg-titan-background {
+    background-color: #e4ddd6;
+  }
+</style>
