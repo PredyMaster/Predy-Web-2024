@@ -2,7 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Saans";
+  src: url("/newWeb/fonts/Saans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saans";
+  src: url("/newWeb/fonts/Saans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saans";
+  src: url("/newWeb/fonts/Saans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
+  --accent: 70, 149, 226;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+}
+html {
+  font-family: "Saans", Arial, sans-serif;
+  background: #13151a;
+  background-size: 224px;
+}
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+::selection {
+  background-color: #4695e2;
+  color: #ffffff;
+}
+
+.noSelection::selection {
+  /* background: none; */
+  background-color: white;
+  color: white;
+  fill: white;
+  -webkit-text-fill-color: #4695e2;
+}
+
+/* :root {
   --color-blue-800: #1e40af;
   --color-blue-600: #2563eb;
   --color-blue-400: #60a5fa;
@@ -42,7 +97,7 @@
   background: #afb7c2;
   border-style: solid rgba(0, 0, 0, 0);
   background-clip: padding-box;
-}
+} */
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -67,7 +122,7 @@
   color: white;
   border: none;
 }
-summary {
+/* summary {
   position: relative;
 }
 summary::marker {
@@ -109,7 +164,7 @@ summary::after {
   appearance: textfield;
   -moz-appearance: textfield;
 }
-
+ */
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -121,7 +176,7 @@ summary::after {
 
 .scrollbarLite::-webkit-scrollbar-track {
   border: none;
-  background-color: white !important;
+  background-color: red !important;
   border-color: none;
 }
 
@@ -130,11 +185,45 @@ summary::after {
   outline: none;
 }
 
-.tooltip {
+/* .tooltip {
   visibility: hidden;
   position: absolute;
 }
 .has-tooltip:hover .tooltip {
   visibility: visible;
   z-index: 100;
+} */
+
+.dotBackground {
+  --dot-bg: black;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background: linear-gradient(
+        90deg,
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    linear-gradient(
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave-active {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
 }

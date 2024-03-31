@@ -11,34 +11,40 @@ const { videos, ruta } = Astro.props
 ---
 
 <div
-  class="flex flex-row flex-wrap justify-center items-start gap-4 text-white"
+  class="flex flex-row justify-center items-start gap-4 text-white mx-auto w-full"
 >
-  {
-    videos.map((video, index) => {
-      return (
-        <div class="m-2 px-3 w-full max-w-96">
-          {video.idYoutube && (
-            <div class="flex flex-col">
-              <LiteYoutube
-                videoId={video.idYoutube}
-                title={video.titulo}
-                backgroundImage={`${import.meta.env.PUBLIC_BASE_PATH}/music/thumnails-youtube/${ruta}/${video.idYoutube}.jpg`}
-                className="w-[22rem] rounded-md"
-              />
-              <div class="flex justify-between p-2">
-                <p class="font-semibold">{video.titulo}</p>
-                <span>{video.visualizacionesYoutube}</span>
+  <div
+    class="w-full max-w-[50rem] xl:max-w-[75rem] flex flex-wrap justify-start"
+  >
+    {
+      videos.map((video, index) => {
+        return (
+          <div class="m-2 px-3 flex-auto max-w-96">
+            {video.idYoutube && (
+              <div class="flex flex-col">
+                <LiteYoutube
+                  videoId={video.idYoutube}
+                  title={video.titulo}
+                  backgroundImage={`${import.meta.env.PUBLIC_BASE_PATH}/music/thumnails-youtube/${ruta}/${video.idYoutube}.jpg`}
+                  className="w-full rounded-md"
+                />
+                <div class="flex justify-between p-2">
+                  <p class="font-semibold">{video.titulo}</p>
+                  <span class="text-primary-500">
+                    {video.visualizacionesYoutube}
+                  </span>
+                </div>
+
+                <hr class="my-2 w-[96%] mx-auto" />
+
+                <p class="text-sm p-2">{video.descripcionSugerida}</p>
               </div>
-
-              <hr class="my-2 w-[96%] mx-auto" />
-
-              <p class="text-sm p-2">{video.descripcionSugerida}</p>
-            </div>
-          )}
-        </div>
-      )
-    })
-  }
+            )}
+          </div>
+        )
+      })
+    }
+  </div>
 
   <ConsoleLogger info={videos} client:only />
 </div>
