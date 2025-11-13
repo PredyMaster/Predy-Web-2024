@@ -1,0 +1,77 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import "@/styles/split-layout-new.css"
+---
+
+<Layout title="La historia de Predy">
+  <main class="split-container">
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Art Side -->
+    <section class="split-side art-side">
+      <div class="side-background">
+        <div class="gradient-sphere art-sphere"></div>
+      </div>
+
+      <a href="/arte" class="side-content">
+        <div class="side-image-container">
+          <img
+            src={`${import.meta.env.PUBLIC_BASE_PATH}images/Arte-cabecera-dark.jpg`}
+            alt="Arte de Predy"
+            class="side-image"
+          />
+        </div>
+        <div class="side-categories">
+          <span class="category-tag">Graffiti</span>
+          <span class="category-tag">Motion</span>
+          <span class="category-tag">3D</span>
+          <span class="category-tag">AI Art</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- Music Side -->
+    <section class="split-side music-side">
+      <div class="side-background">
+        <div class="gradient-sphere music-sphere"></div>
+      </div>
+
+      <a href="/musica" class="side-content">
+        <div class="side-image-container">
+          <img
+            src={`${import.meta.env.PUBLIC_BASE_PATH}images/Musica-cabecera-dark.jpg`}
+            alt="Música de Predy"
+            class="side-image"
+          />
+        </div>
+        <div class="side-categories">
+          <span class="category-tag">Videoclips</span>
+          <span class="category-tag">Álbumes</span>
+          <span class="category-tag">Shows</span>
+          <span class="category-tag">Media</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- Central Logo/Title -->
+    <div class="central-logo">
+      <h1 class="main-title">Predy</h1>
+      <div class="title-separator"></div>
+      <p class="tagline">Arte & Música</p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/noise.png") repeat;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 10;
+  }
+</style>

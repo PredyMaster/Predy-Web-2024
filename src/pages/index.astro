@@ -1,103 +1,245 @@
 ---
 import Layout from "@/layouts/Layout.astro"
-import Card from "@/components/Card/Card.astro"
-/* import "@/styles/PageSyles.css" */
+import "@/styles/split-layout-new.css"
 
 const itemArt = [
   {
     label: "Showreel",
     link: "arte/showreel",
+    description: "Motion Design & Visual Effects",
+    icon: "🎬",
   },
   {
-    label: "Ilustraciones",
+    label: "Digital Art",
     link: "arte/ilustraciones",
+    description: "Ilustración Digital & Concept Art",
+    icon: "🎨",
   },
   {
-    label: "Motion graphics",
+    label: "Motion Graphics",
     link: "arte/motion-graphics",
+    description: "Animación & Diseño en Movimiento",
+    icon: "✨",
   },
   {
-    label: "Trabajos en 3D",
+    label: "3D Universe",
     link: "arte/3d",
+    description: "Modelado & Animación 3D",
+    icon: "🌌",
   },
   {
-    label: "Creaciones con IA",
+    label: "AI Creations",
     link: "arte/ia",
+    description: "Arte Generativo & Experimentación",
+    icon: "🤖",
   },
   {
-    label: "Graffiti",
+    label: "Urban Art",
     link: "arte/graffiti",
+    description: "Graffiti & Arte Urbano",
+    icon: "🎨",
   },
 ]
 
 const itemMusic = [
   {
-    label: "Videoclips",
+    label: "Music Videos",
     link: "musica/videoclips",
+    description: "Videoclips Oficiales",
+    year: "2024",
+    icon: "🎥",
   },
   {
-    label: "Predytube",
+    label: "PredyTube",
     link: "musica/predytube",
+    description: "Contenido Exclusivo",
+    year: "2024",
+    icon: "📺",
   },
   {
-    label: "Discos",
+    label: "Discografía",
     link: "musica/discos",
+    description: "Álbumes & Singles",
+    year: "2023",
+    icon: "💿",
   },
   {
-    label: "Conciertos",
+    label: "Live Shows",
     link: "musica/conciertos",
+    description: "Directos & Festivales",
+    year: "2024",
+    icon: "🎪",
   },
   {
-    label: "Recortes de prensa",
+    label: "Press",
     link: "musica/recortes-de-prensa",
+    description: "Medios & Entrevistas",
+    year: "2024",
+    icon: "📰",
   },
   {
-    label: "Extras",
+    label: "Behind The Scenes",
     link: "musica/extras",
+    description: "Contenido Backstage",
+    year: "2024",
+    icon: "🎬",
   },
 ]
+
+// Featured works for the hero section
+const featuredArt = {
+  title: "Latest Project",
+  project: "Neural Dreams",
+  description: "Una fusión entre arte tradicional e inteligencia artificial",
+  thumbnail: `${import.meta.env.PUBLIC_BASE_PATH}images/Arte-cabecera-dark.jpg`,
+}
+
+const featuredMusic = {
+  title: "Latest Release",
+  track: "Dopamina",
+  description: "Nuevo álbum disponible en todas las plataformas",
+  thumbnail: `${import.meta.env.PUBLIC_BASE_PATH}images/Musica-cabecera-dark.jpg`,
+}
 ---
 
 <Layout title="La historia de Predy">
-  <div
-    id="swipe-area"
-    class="my-[6.2rem] flex justify-center items-center flex-col"
-  >
-    <h2
-      class="w-max mx-auto px-8 text-5xl mb-16 flex items-center gap-3 h-20 content-center text-white"
-    >
-      La historia de
-      <span
-        class="text-gradient noSelection font-bold tracking-wide text-6xl h-20 mt-5 flex text-primary-500"
-      >
-        Predy</span
-      >
-    </h2>
+  <div class="split-container">
+    <div class="noise-overlay" aria-hidden="true"></div>
 
-    <ul
-      role="list"
-      class="flex flex-col md:flex-row justify-center w-max mx-auto gap-y-16"
-    >
-      <Card
-        href="arte"
-        title="Arte"
-        body="showreel / ilustraciones / 3D / motion graphics / IA"
-        items={itemArt}
-        imageSrc={`${import.meta.env.PUBLIC_BASE_PATH}images/Arte-cabecera.jpg`}
-        className="w-full mx-10 md:w-[26rem] rounded-l-3xl hover:bg-sky-500/[.06]"
-        align="left"
-        viewTransition="transitionArte"
-      />
-      <Card
-        href="musica"
-        title="Música"
-        body="Videoclips / Canciones / Conciertos / Extras / Recortes de prensa?"
-        items={itemMusic}
-        imageSrc={`${import.meta.env.PUBLIC_BASE_PATH}images/Musica-cabecera.jpg`}
-        className="w-full mx-10 md:w-[26rem] rounded-r-3xl hover:bg-sky-500/[.06]"
-        align="right"
-        viewTransition="transitionMusica"
-      />
-    </ul>
+    <!-- Art Section -->
+    <section class="art-section">
+      <div class="section-background">
+        <div class="gradient-sphere"></div>
+        <!-- <div class="floating-elements" aria-hidden="true">
+          {
+            ["🎨", "✨", "🎬", "🌌"].map((emoji) => (
+              <span class="floating-emoji">{emoji}</span>
+            ))
+          }
+        </div> -->
+      </div>
+
+      <div class="section-content">
+        <header class="section-header">
+          <h2 class="art-title">Arte</h2>
+          <p class="section-subtitle">
+            Explorando los límites del arte digital
+          </p>
+        </header>
+
+        <div class="featured-work">
+          <div class="featured-content">
+            <span class="featured-label">{featuredArt.title}</span>
+            <h3 class="featured-title">{featuredArt.project}</h3>
+            <p class="featured-description">{featuredArt.description}</p>
+          </div>
+          <img
+            src={featuredArt.thumbnail}
+            alt="Featured artwork"
+            class="featured-image"
+          />
+        </div>
+
+        <div class="content-grid">
+          {
+            itemArt.map((item) => (
+              <a href={item.link} class="grid-item art-item">
+                <span class="item-icon">{item.icon}</span>
+                <h3 class="item-title">{item.label}</h3>
+                <p class="item-description">{item.description}</p>
+                <span class="hover-indicator" />
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Section -->
+    <section class="music-section">
+      <div class="section-background">
+        <div class="gradient-sphere music-sphere"></div>
+        <!-- <div class="floating-elements" aria-hidden="true">
+          {
+            ["🎵", "🎧", "🎸", "🎹"].map((emoji) => (
+              <span class="floating-emoji">{emoji}</span>
+            ))
+          }
+        </div> -->
+      </div>
+
+      <div class="section-content">
+        <header class="section-header">
+          <h2 class="music-title">Música</h2>
+          <p class="section-subtitle">
+            La fusión perfecta entre ritmo y poesía
+          </p>
+        </header>
+
+        <div class="featured-work">
+          <div class="featured-content">
+            <span class="featured-label">{featuredMusic.title}</span>
+            <h3 class="featured-title">{featuredMusic.track}</h3>
+            <p class="featured-description">{featuredMusic.description}</p>
+          </div>
+          <img
+            src={featuredMusic.thumbnail}
+            alt="Featured music"
+            class="featured-image"
+          />
+        </div>
+
+        <div class="content-grid">
+          {
+            itemMusic.map((item) => (
+              <a href={item.link} class="grid-item music-item">
+                <span class="item-icon">{item.icon}</span>
+                <h3 class="item-title">{item.label}</h3>
+                <p class="item-description">{item.description}</p>
+                <span class="year-tag">{item.year}</span>
+                <span class="hover-indicator" />
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </section>
   </div>
 </Layout>
+
+<style>
+  .noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/noise.png") repeat;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .floating-emoji {
+    font-size: 1.5rem;
+    position: absolute;
+    animation: float 20s ease-in-out infinite;
+    opacity: 0.5;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(20px, -20px) rotate(90deg);
+    }
+    50% {
+      transform: translate(-20px, -40px) rotate(180deg);
+    }
+    75% {
+      transform: translate(-40px, -20px) rotate(270deg);
+    }
+  }
+</style>

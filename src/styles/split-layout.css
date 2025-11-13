@@ -1,0 +1,210 @@
+:root {
+  /* Modern, elegant color palette */
+  --art-primary: #ffffff;
+  --art-secondary: #1a1a1a;
+  --art-accent: #ff3d00;
+  --art-gradient: linear-gradient(135deg, #ff3d00 0%, #ff8a00 100%);
+
+  --music-primary: #0a0a0a;
+  --music-secondary: #ffffff;
+  --music-accent: #3d5afe;
+  --music-gradient: linear-gradient(135deg, #3d5afe 0%, #00b4d8 100%);
+
+  /* Common variables */
+  --transition-speed: 0.4s;
+  --card-blur: 16px;
+  --section-padding: clamp(2rem, 5vw, 4rem);
+}
+.split-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Common section styles */
+.section-base {
+  position: relative;
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  isolation: isolate;
+}
+
+/* Art section */
+.art-section {
+  background: var(--art-primary);
+  color: var(--art-secondary);
+  transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.art-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at top right,
+    rgba(255, 61, 0, 0.03),
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+/* Section titles */
+.art-title,
+.music-title {
+  font-family: "Saans-Bold", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.art-title {
+  background: var(--art-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Music section */
+.music-section {
+  background: var(--music-primary);
+  color: var(--music-secondary);
+  transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.music-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(61, 90, 254, 0.05),
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+.music-title {
+  background: var(--music-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Cards */
+.content-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(var(--card-blur));
+  -webkit-backdrop-filter: blur(var(--card-blur));
+  border-radius: 24px;
+  padding: 2rem;
+  transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.art-section .content-card {
+  border: 1px solid rgba(255, 61, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(255, 61, 0, 0.05);
+}
+
+.music-section .content-card {
+  border: 1px solid rgba(61, 90, 254, 0.1);
+  box-shadow: 0 8px 32px rgba(61, 90, 254, 0.05);
+}
+
+.content-card:hover {
+  transform: translateY(-8px);
+}
+
+.art-section .content-card:hover {
+  box-shadow: 0 20px 40px rgba(255, 61, 0, 0.1);
+}
+
+.music-section .content-card:hover {
+  box-shadow: 0 20px 40px rgba(61, 90, 254, 0.1);
+}
+
+/* Divider */
+.split-divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 80vh;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.2) 80%,
+    transparent
+  );
+  z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .split-container {
+    grid-template-columns: 1fr;
+  }
+
+  .split-divider {
+    display: none;
+  }
+
+  .section-base {
+    padding: calc(var(--section-padding) * 0.75);
+  }
+
+  .content-card {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-base {
+    padding: calc(var(--section-padding) * 0.5);
+  }
+
+  .art-title,
+  .music-title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.art-section,
+.music-section {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.art-section {
+  animation-delay: 0.2s;
+}
+
+.music-section {
+  animation-delay: 0.4s;
+}
