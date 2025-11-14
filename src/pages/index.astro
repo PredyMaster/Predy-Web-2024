@@ -88,17 +88,17 @@ const itemMusic = [
 
 // Featured works for the hero section
 const featuredArt = {
-  title: "Latest Project",
-  project: "Neural Dreams",
+  title: "",
+  project: "Diseños e ilustraciones",
   description: "Una fusión entre arte tradicional e inteligencia artificial",
-  thumbnail: `${import.meta.env.PUBLIC_BASE_PATH}images/Arte-cabecera-dark.jpg`,
+  thumbnail: `${import.meta.env.PUBLIC_BASE_PATH}images/Header-Arte.jpg`,
 }
 
 const featuredMusic = {
-  title: "Latest Release",
-  track: "Dopamina",
+  title: "",
+  track: "Música y eventos",
   description: "Nuevo álbum disponible en todas las plataformas",
-  thumbnail: `${import.meta.env.PUBLIC_BASE_PATH}images/Musica-cabecera-dark.jpg`,
+  thumbnail: `${import.meta.env.PUBLIC_BASE_PATH}images/Header-Music.jpg`,
 }
 ---
 
@@ -122,17 +122,25 @@ const featuredMusic = {
       <div class="section-content">
         <header class="section-header">
           <h2 class="art-title">Arte</h2>
-          <p class="section-subtitle">
+          <p class="section-subtitleArte">
             Explorando los límites del arte digital
           </p>
         </header>
 
-        <div class="featured-work">
+        <!-- <div class="featured-work">
           <div class="featured-content">
             <span class="featured-label">{featuredArt.title}</span>
             <h3 class="featured-title">{featuredArt.project}</h3>
             <p class="featured-description">{featuredArt.description}</p>
           </div>
+          <img
+            src={featuredArt.thumbnail}
+            alt="Featured artwork"
+            class="featured-image"
+          />
+        </div> -->
+
+        <div class="object-fill flex justify-end">
           <img
             src={featuredArt.thumbnail}
             alt="Featured artwork"
@@ -176,12 +184,20 @@ const featuredMusic = {
           </p>
         </header>
 
-        <div class="featured-work">
+        <!-- <div class="featured-work flex justify-center items-center">
           <div class="featured-content">
             <span class="featured-label">{featuredMusic.title}</span>
             <h3 class="featured-title">{featuredMusic.track}</h3>
             <p class="featured-description">{featuredMusic.description}</p>
           </div>
+          <img
+            src={featuredMusic.thumbnail}
+            alt="Featured music"
+            class="featured-image"
+          />
+        </div> -->
+
+        <div class="object-fill">
           <img
             src={featuredMusic.thumbnail}
             alt="Featured music"
@@ -206,6 +222,17 @@ const featuredMusic = {
     </section>
   </div>
 </Layout>
+
+<style is:global>
+  @font-face {
+    font-family: "Fast Blaze";
+    src: url("http://localhost:4321/newWeb/fonts/fast-blaze.regular.otf")
+      format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
 
 <style>
   .noise-overlay {
