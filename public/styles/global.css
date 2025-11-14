@@ -23,6 +23,36 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Fast Blaze";
+  src: url("/newWeb/fonts/fast-blaze.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aerosoldier";
+  src: url("/newWeb/fonts/AerosoldierBasic_PERSONAL_USE_ONLY.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreshMarker";
+  src: url("/newWeb/fonts/freshmarker.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AerosoldierSymbol";
+  src: url("/newWeb/fonts/AerosoldierSymbol_PERSONAL_USE_ONLY.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --accent: 70, 149, 226;
   --accent-light: 224, 204, 250;
@@ -40,8 +70,15 @@ html {
   background-size: 224px;
 }
 code {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family:
+    Menlo,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace;
 }
 
 ::selection {
@@ -199,7 +236,8 @@ summary::after {
   --dot-color: white;
   --dot-size: 1px;
   --dot-space: 22px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
         90deg,
         var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
         transparent 1%

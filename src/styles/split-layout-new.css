@@ -1,7 +1,7 @@
 :root {
   /* Sophisticated color palette */
-  --art-primary: #ffffff;
-  --art-secondary: #0f0f0f;
+  --art-primary: #ece9ec;
+  --art-secondary: #5c4da9;
   --art-accent: #ff3366;
   --art-accent-soft: rgba(255, 51, 102, 0.1);
   --art-gradient: linear-gradient(135deg, #ff3366 0%, #ff8b4d 100%);
@@ -11,8 +11,8 @@
     rgba(255, 139, 77, 0.1) 100%
   );
 
-  --music-primary: #0a0a0f;
-  --music-secondary: #ffffff;
+  --music-primary: #392e7b;
+  --music-secondary: #fcd301;
   --music-accent: #4f46e5;
   --music-accent-soft: rgba(79, 70, 229, 0.1);
   --music-gradient: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
@@ -23,6 +23,9 @@
   );
 
   /* Typography */
+  --font-graff: "Fast Blaze", "Courier New", monospace;
+  --font-graff2: "Aerosoldier", "FreshMarker", "Courier New", monospace;
+  --font-graff-simbol: "AerosoldierSymbol";
   --font-display: "Saans-Bold", sans-serif;
   --font-body: "Saans-Regular", sans-serif;
   --font-size-display: clamp(2.5rem, 5vw, 4.5rem);
@@ -46,8 +49,8 @@
   --section-padding: var(--space-lg);
   --border-radius: 24px;
   --shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-md:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
@@ -107,7 +110,7 @@
   padding: var(--section-padding);
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
+  /* gap: var(--space-lg); */
 }
 
 .art-section {
@@ -128,18 +131,26 @@
 
 .art-title,
 .music-title {
-  font-family: var(--font-display);
+  font-family: var(--font-graff);
   font-size: var(--font-size-display);
   line-height: var(--line-height-display);
   margin-bottom: var(--space-xs);
   position: relative;
 }
 
-.section-subtitle {
-  font-family: var(--font-body);
+.art-title {
+  text-align: right;
+}
+
+.section-subtitle,
+.section-subtitleArte {
+  font-family: var(--font-graff-simbol);
   font-size: var(--font-size-subtitle);
   opacity: 0.8;
-  max-width: 25ch;
+}
+
+.section-subtitleArte {
+  text-align: right;
 }
 
 /* Featured Work */
@@ -186,9 +197,11 @@
 
 .featured-image {
   width: 100%;
-  height: 300px;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 600px;
   object-fit: cover;
-  border-radius: calc(var(--border-radius) / 2);
+  border-radius: calc(var(--border-radius) / 4);
   transition: transform var(--transition-speed) var(--transition-bounce);
 }
 
@@ -221,7 +234,7 @@
 }
 
 .music-item {
-  background: var(--music-accent-soft);
+  background: var(--art-secondary);
 }
 
 .grid-item:hover {
@@ -232,13 +245,17 @@
 .item-icon {
   font-size: 2rem;
   margin-bottom: var(--space-sm);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item-title {
   font-family: var(--font-display);
   font-size: var(--font-size-title);
   margin-bottom: var(--space-xs);
+  line-height: normal;
+  font-weight: bold;
 }
 
 .item-description {
