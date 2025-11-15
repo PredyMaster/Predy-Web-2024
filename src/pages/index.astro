@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro"
+import LogoPredy from "@/components/LogoPredy.astro"
 import "@/styles/split-layout-new.css"
 
 const itemArt = [
@@ -103,7 +104,23 @@ const featuredMusic = {
 ---
 
 <Layout title="La historia de Predy">
-  <div class="split-container">
+  <section class="h-[60vh] w-full block">
+    <header
+      class="page-header h-full flex justify-center items-center flex-col text-center relative overflow-hidden"
+    >
+      <LogoPredy
+        class="w-96 h-auto -rotate-2 fill-[#fcd301] text-[#392e7b] stroke-[60]"
+      />
+
+      <h1 class="page-title text-[#fcd301] text-4xl">La historia de Predy</h1>
+      <p
+        class="page-subtitle bg-[#392e7b] px-4 py-1 mt-1 rotate-1.5 text-white"
+      >
+        Un viaje a través del arte y la música del artista
+      </p>
+    </header>
+  </section>
+  <section class="split-container">
     <div class="noise-overlay" aria-hidden="true"></div>
 
     <!-- Art Section -->
@@ -124,6 +141,9 @@ const featuredMusic = {
           <h2 class="art-title">Arte</h2>
           <p class="section-subtitleArte">
             Explorando los límites del arte digital
+          </p>
+          <p class="section-subtitle-symbols">
+            Estos son simbolos de la secion de arte
           </p>
         </header>
 
@@ -182,6 +202,9 @@ const featuredMusic = {
           <p class="section-subtitle">
             La fusión perfecta entre ritmo y poesía
           </p>
+          <p class="section-subtitle-symbols">
+            Estos son simbolos de la secion de musica
+          </p>
         </header>
 
         <!-- <div class="featured-work flex justify-center items-center">
@@ -220,53 +243,53 @@ const featuredMusic = {
         </div>
       </div>
     </section>
-  </div>
+  </section>
+
+  <style is:global>
+    @font-face {
+      font-family: "Fast Blaze";
+      src: url("http://localhost:4321/newWeb/fonts/fast-blaze.regular.otf")
+        format("opentype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+
+  <style>
+    .noise-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("/noise.png") repeat;
+      opacity: 0.03;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .floating-emoji {
+      font-size: 1.5rem;
+      position: absolute;
+      animation: float 20s ease-in-out infinite;
+      opacity: 0.5;
+    }
+
+    @keyframes float {
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      25% {
+        transform: translate(20px, -20px) rotate(90deg);
+      }
+      50% {
+        transform: translate(-20px, -40px) rotate(180deg);
+      }
+      75% {
+        transform: translate(-40px, -20px) rotate(270deg);
+      }
+    }
+  </style>
 </Layout>
-
-<style is:global>
-  @font-face {
-    font-family: "Fast Blaze";
-    src: url("http://localhost:4321/newWeb/fonts/fast-blaze.regular.otf")
-      format("opentype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-</style>
-
-<style>
-  .noise-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("/noise.png") repeat;
-    opacity: 0.03;
-    pointer-events: none;
-    z-index: 10;
-  }
-
-  .floating-emoji {
-    font-size: 1.5rem;
-    position: absolute;
-    animation: float 20s ease-in-out infinite;
-    opacity: 0.5;
-  }
-
-  @keyframes float {
-    0%,
-    100% {
-      transform: translate(0, 0) rotate(0deg);
-    }
-    25% {
-      transform: translate(20px, -20px) rotate(90deg);
-    }
-    50% {
-      transform: translate(-20px, -40px) rotate(180deg);
-    }
-    75% {
-      transform: translate(-40px, -20px) rotate(270deg);
-    }
-  }
-</style>
