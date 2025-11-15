@@ -1,3 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: "Saans";
+  src: url("/newWeb/fonts/Saans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saans";
+  src: url("/newWeb/fonts/Saans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saans";
+  src: url("/newWeb/fonts/Saans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fast Blaze";
+  src: url("/newWeb/fonts/fast-blaze.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aerosoldier";
+  src: url("/newWeb/fonts/AerosoldierBasic_PERSONAL_USE_ONLY.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreshMarker";
+  src: url("/newWeb/fonts/freshmarker.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AerosoldierSymbol";
+  src: url("/newWeb/fonts/AerosoldierSymbol_PERSONAL_USE_ONLY.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
